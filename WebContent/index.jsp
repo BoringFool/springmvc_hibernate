@@ -6,12 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <%
-	String a= request.getContextPath();
+	String a = request.getContextPath();
 %>
 </head>
 <body>
 
-	<form action="<%= a %>/user/service.do">
+	<form action="<%=a%>/user/service.do">
 		<input type="submit" value="提交" />
+	</form>
+	
+	<form action="<%=a%>/user/tb.do">
+		 <input type="submit" value="tb" />
+	</form>
+	
 </body>
 </html>
