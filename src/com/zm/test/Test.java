@@ -33,7 +33,7 @@ public class Test {
 		// 检查数据库连接
 		DataSource dataSource = ctx.getBean(DataSource.class);
 
-		// System.out.println(dataSource.getConnection().toString());
+		 System.out.println(dataSource.getConnection().toString());
 		// 检查hibernate配置
 		SessionFactory sessionFactory = ctx.getBean(SessionFactory.class);
 		System.out.println(sessionFactory);
