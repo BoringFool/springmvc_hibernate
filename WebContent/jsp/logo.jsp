@@ -7,33 +7,27 @@
 <link href="../css/logo.css" rel="stylesheet" type="text/css" />
 <title>Insert title here</title>
 </head>
-<body style="background-color: #f3f3f3">
-
+<body>
 	<div class="main">
-		<div>
-			<div style="margin: 40px 135px;">
-				<img class="imge" alt="" src="../images/logo_f.jpg">
+		<div class="scd_d">
+			<img class="imge" alt="" src="../images/logo_f.jpg">
+		</div>
+		<h1 class="hed_t">登录进入</h1>
+		<form action="">
+			<div class="fm_fd">
+				<div class="fm_sd">
+					<label class="inp_l" for="username">用户名 </label> 
+					<input id="username" name="username" class="inp_t" type="text" /> 
+					<label class="inp_l" for="password">密码<a href="#"style="float: right;">忘记密码？</a></label> 
+					<input id="password"name="password" class="inp_t" type="text" />
+					<input id="commit"name="commit" class="inp_s" type="submit" value="提交" />
+				</div>
 			</div>
-			<div>
-				<h1 style="top: 50%;">登录进入</h1>
-				<form action="">
-					<div
-						style="margin: 10px; border: 1 solid; background-color: #ffffff">
-						<label style="font-size: 16px" for="username">用户名 </label> <input
-							id="username" name="username"
-							style="width: 300px; height: 25px; font-size: 16px; border: 0.5px solid #9d9d9d;"
-							type="text"> <label style="font-size: 16px"
-							for="password">密码<a href="#" style="float: right;">忘记密码？</a>
-						</label> <input id="password" name="password"
-							style="width: 300px; height: 25px; font-size: 16px; border: 0.5px solid #9d9d9d;"
-							style="font-size: 16px" type="text" value="密码"> <input
-							name="commit"
-							style="width: 300px; height: 25px; font-size: 16px; border: 0.5px solid #9d9d9d;"
-							type="submit" value="提交">
-					</div>
-				</form>
-
-			</div>
+		</form>
+		<div class="thd_d">
+			<p>
+				没有账号？<a href="#">注册账号。</a>
+			</p>
 		</div>
 	</div>
 </body>
