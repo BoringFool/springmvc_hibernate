@@ -18,7 +18,7 @@
 				<div class="fm_sd">
 					<label class="inp_l" for="username">用户名 </label> 
 					<input id="username" name="username" class="inp_t" type="text" /> 
-					<label class="inp_l" for="password">密码<a href="#"style="float: right;">忘记密码？</a></label> 
+					<label class="inp_l" for="password">密码<a href="reset.jsp"style="float: right;">忘记密码？</a></label> 
 					<input id="password"name="password" class="inp_t" type="text" />
 					<input id="commit"name="commit" class="inp_s" type="submit" value="提交" />
 				</div>
@@ -26,7 +26,7 @@
 		</form>
 		<div class="thd_d">
 			<p>
-				没有账号？<a href="#">注册账号。</a>
+				没有账号？<a href="register.jsp">注册账号。</a>
 			</p>
 		</div>
 	</div>
