@@ -49,7 +49,7 @@ p {
 
 .fm_fd {
 	margin: 0px auto;
-	height: 210px;
+	height: 215px;
 	border: 1px solid #D8DEE2;
 	width: 320px;
 	background-color: #FFFFFF;
@@ -78,8 +78,8 @@ p {
 }
 
 .inp_s {
-	width: 284px;
-	height: 30px;
+	width: 292px;
+	height: 32px;
 	font-size: 14px;
 	color: #FFFFFF;
 	margin-top: 10px;
