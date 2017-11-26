@@ -1,0 +1,40 @@
+body {
+	background-color: #f9f9f9
+}
+
+font {
+	font-family: Helvetica;
+}
+
+a {
+	text-decoration: none;
+	color: #5b5bff;
+}
+
+p {
+	text-decoration: none;
+	font-size: 12px;
+	margin: 12px auto;
+}
+
+.main {
+	margin: 0px auto;
+	width: 760px;
+	overflow: hidden;
+	border: 1px solid black;
+}
+
+.sc_d {
+	border: 1px solid black;
+}
+
+.th_d {
+	border: 1px solid red;
+	float: right;
+}
+
+.fm_md {
+	width: 480px;
+	float: left;
+	border: 1px solid black;
+}
