@@ -1,6 +1,6 @@
 package com.zm.test;
 
-import static org.junit.Assert.*;
+
 
 import javax.annotation.Resource;
 
