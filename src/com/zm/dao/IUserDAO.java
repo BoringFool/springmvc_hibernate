@@ -4,8 +4,6 @@ import com.zm.model.User;
 
 
 
-public interface IUserDAO {
+public interface IUserDAO extends IBaseDAO<User>{
 
-	public void save(User u);
-	public User sel(User u);
 }

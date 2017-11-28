@@ -6,21 +6,23 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import com.zm.dao.IBaseDAO;
 
+@SuppressWarnings("unchecked")
 public class BaseDAO<T> implements IBaseDAO<T> {
 
 	@Resource
 	private SessionFactory sessionfactory;
-	
 	Class<T> clazz;
-	
-	public BaseDAO(){
-		ParameterizedType t=(ParameterizedType) this.getClass().getGenericSuperclass();
-		clazz=(Class<T>)t.getActualTypeArguments().gets;
+
+	public BaseDAO() {
+		ParameterizedType t = (ParameterizedType) this.getClass().getGenericSuperclass();
+		Type[] a = t.getActualTypeArguments();
+		clazz = (Class<T>) a[0];
 	}
 
 	public SessionFactory getSessionfactory() {
@@ -33,39 +35,39 @@ public class BaseDAO<T> implements IBaseDAO<T> {
 
 	@Override
 	public void add(T entity) {
-		Session session=getSession();
+		Session session = getSession();
 		session.save(entity);
 	}
 
 	@Override
-	public void delet(long id) {
-		Session session=getSession();
-		session.delete(clazz, id);
+	public void delet(Long id) {
+		Session session = getSession();
+		session.delete(getSession().get(clazz, id));
 
 	}
 
 	@Override
 	public void update(T entity) {
-		// TODO Auto-generated method stub
-
+		getSession().update(entity);
 	}
 
 	@Override
 	public List<T> findall() {
-		// TODO Auto-generated method stub
-		return null;
+		String hql = "FROM" + clazz.getSimpleName();
+		return getSession().createQuery(hql).list();
 	}
 
 	@Override
-	public T getById(long id) {
-		// TODO Auto-generated method stub
-		return null;
+	public T getById(Long id) {
+		return (T) getSession().get(clazz, id);
 	}
 
 	@Override
-	public List<T> getByIds(long[] ids) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<T> getByIds(Long[] ids) {
+		String hql = "FROM" + clazz.getSimpleName()+"WHERE ID in(:ids)";
+		Query q=getSession().createQuery(hql);
+		q.setParameterList("ids", ids);
+		return q.list();
 	}
 
 	public Session getSession() {

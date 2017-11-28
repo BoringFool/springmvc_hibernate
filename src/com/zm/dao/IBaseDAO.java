@@ -4,10 +4,10 @@ import java.util.List;
 
 public interface IBaseDAO<T> {
 	public void add(T entity);
-	public void delet(long id);
+	public void delet(Long id);
 	public void update(T entity);
 	public List<T> findall();
-	public T getById(long id);
-	public List<T> getByIds(long[] ids);
+	public T getById(Long id);
+	public List<T> getByIds(Long[] ids);
 	
 }

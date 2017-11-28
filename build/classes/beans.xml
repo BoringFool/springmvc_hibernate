@@ -55,14 +55,12 @@
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
-	<!-- 启动事务注解 <tx:annotation-driven transaction-manager="transactionManager" 
-		/> -->
+	<!-- 启动事务注解 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
 
-	<bean id="user" class="com.zm.model.User">
-		<!-- collaborators and configuration for this bean go here -->
+	<bean id="userservice" class="com.zm.service.impl.UserService" >
+	
 	</bean>
-
-
 	<!-- more bean definitions go here -->
 
 </beans>
