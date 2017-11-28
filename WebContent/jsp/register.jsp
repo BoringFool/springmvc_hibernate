@@ -12,24 +12,30 @@
 		<h1>注册账号</h1>
 		<h2>用作网站简单描述</h2>
 		<div class="sc_d">
-			<div>步骤一</div>
-			<div>步骤二</div>
+			<div class="sc_d_d">
+				步骤一：<br>账号注册
+			</div>
+			<div class="sc_d_d">
+				步骤二：<br>进入或离开
+			</div>
 		</div>
 		<form action="">
-			<h2>创建个人账户</h2>
 			<div class="fm_md">
-				<label for="username" >用户名</label> <input id="username" type="text">
-				<p>这是登陆名字。</p>
-				<label for="email" >邮箱地址</label> <input id="email" type="text">
+				<h2>创建个人账户</h2>
+				<label for="username">用户名</label> <input id="username" type="text">
+				<p>该名称将作为登陆名和昵称。</p>
+				<label for="email">邮箱地址</label> <input id="email" type="text">
 				<p>和账户有关的信息，都会通过这个邮箱发送给您。</p>
-				<label for="password" >密码</label> <input id="password" type="text">
+				<label for="password">密码</label> <input id="password" type="text">
 				<p>密码必须包含字母和数字。</p>
-				<input type="submit" value="注册">
+				<input class="inp_s_s" type="submit" value="注册">
 			</div>
 		</form>
 		<div class="th_d">
-			  <div>网站特点介绍</div>
-			  <div>特点内容<br>1...<br>2...</div>
+			<div>网站特点介绍</div>
+			<div>
+				特点内容<br>1...<br>2...
+			</div>
 		</div>
 	</div>
 </body>

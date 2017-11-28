@@ -9,6 +9,7 @@ import com.zm.service.IUserService;
 
 public class Tests {
 
+	@SuppressWarnings("resource")
 	@Test
 	public void testact() {
 		ApplicationContext ctx =new ClassPathXmlApplicationContext("beans.xml");

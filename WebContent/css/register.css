@@ -2,6 +2,23 @@ body {
 	background-color: #f9f9f9
 }
 
+h1 {
+	margin: 32px 0px 2px 4px;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #b6b6b6;
+	margin: 0px 0px 10px 4px;
+}
+
+label {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 10px 4px 4px 4px;
+}
+
 font {
 	font-family: Helvetica;
 }
@@ -12,29 +29,56 @@ a {
 }
 
 p {
-	text-decoration: none;
-	font-size: 12px;
-	margin: 12px auto;
+	font-size: 10px;
+	margin: 6px 4px 10px 4px;
+}
+
+input {
+	width: 440px;
+	height: 32px;
+	margin: 4px;
+	background-color: #efefef;
+	border: 1px solid #cdcdcd;
 }
 
 .main {
 	margin: 0px auto;
-	width: 760px;
+	width: 712px;
 	overflow: hidden;
-	border: 1px solid black;
 }
 
 .sc_d {
+	overflow: hidden;
+	margin: 16px 0px 10px 4px;
+}
+
+.sc_d_d {
 	border: 1px solid black;
+	width: 340px;
+	height: 50px;
+	float: left;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 14px;
+	text-align: center;
 }
 
 .th_d {
-	border: 1px solid red;
+	border: 1px solid black;
 	float: right;
+	width: 180px;
+	height: 200px;
+	margin: 20px 28px 0px 0px;
 }
 
 .fm_md {
 	width: 480px;
 	float: left;
-	border: 1px solid black;
+	margin: 20px 0px 0px 0px;
+}
+
+.inp_s_s {
+	width: 160px;
+	color:white;
+	background-color: #1fa51f;
 }
