@@ -37,6 +37,8 @@ input {
 	width: 440px;
 	height: 32px;
 	margin: 4px;
+	padding-left:6px;
+	font-size: 14px;
 	background-color: #efefef;
 	border: 1px solid #cdcdcd;
 }
@@ -53,7 +55,7 @@ input {
 }
 
 .sc_d_d {
-	border: 1px solid black;
+	border: 1px solid #cdcdcd;
 	width: 340px;
 	height: 50px;
 	float: left;
@@ -63,12 +65,30 @@ input {
 	text-align: center;
 }
 
+.f_s_s1 {
+	border-right: 0;
+}
+
+.f_s_s2 {
+	color: #b6b6b6;
+	background-color: #efefef;
+}
+
 .th_d {
-	border: 1px solid black;
+	border: 1px solid #cdcdcd;
 	float: right;
 	width: 180px;
 	height: 200px;
 	margin: 20px 28px 0px 0px;
+}
+
+.th_d_md {
+	height: 20px;
+	padding:10px 10px;
+	border: 1px solid #cdcdcd;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 }
 
 .fm_md {
@@ -79,6 +99,6 @@ input {
 
 .inp_s_s {
 	width: 160px;
-	color:white;
+	color: white;
 	background-color: #1fa51f;
 }

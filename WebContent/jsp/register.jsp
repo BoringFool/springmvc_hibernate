@@ -4,18 +4,42 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="../css/register.css" rel="stylesheet" type="text/css" />
 <title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<link href="../css/register.css" rel="stylesheet" type="text/css" />
+<script>
+	$().ready(function() {
+		$(document).ready(function() {
+			$("input").click(function() {
+				$(this).hide();
+			});
+		});
+		$("p").click(function() {
+			$(this).hide();
+		});
+		/* $("#a").click(function(){
+			$(this).hide();
+		}); */
+		/* $(".sc_d").click(function(){
+			$(this).hide();
+		}); */
+	});
+</script>
+<script>
+	if (typeof jQuery == 'undefined') {
+		window.alert("没有jquery");
+	}
+</script>
 </head>
 <body>
 	<div class="main">
 		<h1>注册账号</h1>
 		<h2>用作网站简单描述</h2>
-		<div class="sc_d">
-			<div class="sc_d_d">
+		<div id="a" class="sc_d">
+			<div class="sc_d_d f_s_s1">
 				步骤一：<br>账号注册
 			</div>
-			<div class="sc_d_d">
+			<div class="sc_d_d f_s_s2">
 				步骤二：<br>进入或离开
 			</div>
 		</div>
@@ -25,14 +49,17 @@
 				<label for="username">用户名</label> <input id="username" type="text">
 				<p>该名称将作为登陆名和昵称。</p>
 				<label for="email">邮箱地址</label> <input id="email" type="text">
-				<p>和账户有关的信息，都会通过这个邮箱发送给您。</p>
-				<label for="password">密码</label> <input id="password" type="text">
+				<p>凡是和账户有关的信息，都会通过这个邮箱发送给您。</p>
+				<label for="password">密码</label> <input id="password"
+					type="password">
 				<p>密码必须包含字母和数字。</p>
 				<input class="inp_s_s" type="submit" value="注册">
 			</div>
 		</form>
 		<div class="th_d">
-			<div>网站特点介绍</div>
+			<div class="th_d_md">
+				<span>网站特点介绍</span>
+			</div>
 			<div>
 				特点内容<br>1...<br>2...
 			</div>
