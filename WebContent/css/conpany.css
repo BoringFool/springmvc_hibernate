@@ -1,10 +1,64 @@
 .main {
 	margin: 0px auto;
-	width: 320px;
-	border:1px solid black;
+	width: 780px;
+	border: 1px solid black;
 }
-.scd_d{
+
+.scd_d {
+	width: 360px;
+	height: 122px;
+	clear: both;
+	border: 1px solid #000000;
+}
+
+.scd_d_i {
 	width: 320px;
-	height: 40px;
-	border:1px solid black;
+	height: 121px;
+	float: left;
+	clear: both;
+	
+}
+
+.scd_d_md {
+	width: 320px;
+	height: 30px;
+	border: 1px solid #cdcdcd;
+}
+
+.scd_d_sd {
+	width: 320px;
+	height: 60px;
+	border: 1px solid #cdcdcd;
+}
+
+.scd_d_td {
+	width: 180px;
+	height: 30px;
+	float: left;
+	border: 1px solid #cdcdcd;
+}
+
+.scd_d_fd {
+	width: 136px;
+	height: 30px;
+	float: left;
+}
+
+.scd_d_fid {
+	width: 38px;
+	float: left;
+	height: 121px;
+	border-left: none;
+	border: 1px solid #cdcdcd;
+}
+
+.ber_remv1 {
+	border-right: none;
+	border-left: none;
+}
+
+.ber_remv {
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
 }

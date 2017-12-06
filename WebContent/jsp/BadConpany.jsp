@@ -8,20 +8,16 @@
 <link href="../css/conpany.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="main" style="border: 1px solid black;">
-		<div class="scd_d" style="border: 1px solid black;">
-			<div style="border: 1px solid black; height: 40px; width: 320px;">conpanyname
-				top_hang</div>
-			<div style="border: 1px solid black; height: 40px; width: 320px;">description
-				scd_hangAS 啊雙A啊 是A S啊A S 啊sAS啊雙AS 撒</div>
-			<div style="border: 1px solid black; height: 40px; width: 320px;">250</div>
-			<div style="border: 1px solid blackheight: 40px; width: 320px;">offerA S啊
-				fou_hang</div>
-			<div style="border: 1px solid blackheight: 40px; width: 320px;">ok？
-				reight_yishulie_zhansihang</div>
+	<div class="main">
+		<div class="scd_d">
+			<div class="scd_d_i">
+				<div class="scd_d_md ber_remv">conpanyname top_hang</div>
+				<div class="scd_d_sd ber_remv1">description scd_hangAS S啊A S</div>
+				<div class="scd_d_td ber_remv">250</div>
+				<div class="scd_d_fd">offerA S啊</div>
+			</div>
+			<div class="scd_d_fid">ok?</div>
 		</div>
-		<div></div>
-		<div></div>
 	</div>
 </body>
 </html>
