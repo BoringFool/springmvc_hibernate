@@ -1,13 +1,15 @@
 .main {
 	margin: 0px auto;
-	width: 780px;
-	border: 1px solid black;
+	width: 1100px;
+	overflow: hidden;
+
 }
 
 .scd_d {
 	width: 360px;
 	height: 122px;
-	clear: both;
+	margin-right: 5px;
+	float: left;
 	border: 1px solid #000000;
 }
 
@@ -15,8 +17,6 @@
 	width: 320px;
 	height: 121px;
 	float: left;
-	clear: both;
-	
 }
 
 .scd_d_md {
@@ -48,8 +48,29 @@
 	width: 38px;
 	float: left;
 	height: 121px;
-	border-left: none;
 	border: 1px solid #cdcdcd;
+	border-top: none;
+	border-bottom: none;
+}
+
+.s_s {
+	width: 100px;
+	height: 20px;
+	display: inline-block;
+}
+
+.s_s1 {
+	width: 60px;
+	height: 30px;
+	margin-left: 10px;
+	line-height: 26px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #cdcdcd;
+	text-align: center;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
 }
 
 .ber_remv1 {

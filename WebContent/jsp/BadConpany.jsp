@@ -6,18 +6,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link href="../css/conpany.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/conpany.js"></script>
 </head>
 <body>
-	<div class="main">
-		<div class="scd_d">
+	<div id="main" class="main" >
+		<div class="scd_d" >
 			<div class="scd_d_i">
 				<div class="scd_d_md ber_remv">conpanyname top_hang</div>
 				<div class="scd_d_sd ber_remv1">description scd_hangAS S啊A S</div>
-				<div class="scd_d_td ber_remv">250</div>
+				<div class="scd_d_td ber_remv">
+					<span class="s_s">zhaopdsad</span><span class="s_s1">250</span>
+				</div>
 				<div class="scd_d_fd">offerA S啊</div>
 			</div>
 			<div class="scd_d_fid">ok?</div>
 		</div>
 	</div>
+	<div id="a"></div>
 </body>
 </html>
