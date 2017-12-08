@@ -9,7 +9,7 @@ import com.zm.dao.impl.UserDAO;
 import com.zm.model.User;
 import com.zm.service.IUserService;
 
-@Service
+@Service("userservice")
 @Transactional
 public class UserService implements IUserService {
 	
