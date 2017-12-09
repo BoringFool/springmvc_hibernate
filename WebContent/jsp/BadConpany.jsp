@@ -166,5 +166,41 @@ $().ready(function() {
 		}
 		</script>
 	</div>
+	<div>
+		<button type="button" onclick="sendList()">3.点击发送json字符串到后台(集合对象)</button>
+		<script>
+		function sendList(){
+		alert("1");
+		  var jsonData = [ { 
+		        "userId" : "111", 
+		        "userName" : "卡丽熙", 
+		        "userPassword" : "12138", 
+		        "userEmail" : "888888@gmail.com", 
+		    }, { 
+		        "userId" : "222", 
+		        "userName" : "瑟太后", 
+		        "userPassword" : "23222", 
+		        "userEmail" : "7777777@gmail.com", 
+		    }, { 
+		        "userId" : "333", 
+		        "userName" : "三傻", 
+		        "userPassword" : "54323", 
+		        "userEmail" : "934333@gmail.com", 
+		    } ]; 
+		  $.ajax({
+			  type:'post',
+			  url:'${pageContext.request.contextPath}/a/sendList',
+			contentType:'application/json;charset',
+			data:JSON.stringify(jsonData),
+			success:function(data){
+				alert(data[1].name);
+			}
+			error:function(){
+				alert("查询失败");
+			}
+		  });
+		}
+		</script>
+	</div>
 </body>
 </html>

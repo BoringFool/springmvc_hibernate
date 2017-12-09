@@ -71,7 +71,7 @@
 			}); 
 		}
 		</script>
-		<%
+	<%
 		@RequestMapping(value = "/sendJsonListStr") 	
 		public @ResponseBody List<User> sendJsonListStr(@RequestBody ArrayList<User> user) {
 			ArrayList<User> userList = user;

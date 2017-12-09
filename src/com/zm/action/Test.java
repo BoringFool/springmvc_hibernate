@@ -89,4 +89,18 @@ public class Test {
 		}
 		return user;
 	}
+
+	@RequestMapping(value = "/bb")
+	public ResponseEntity<List<User>> bb() {
+		User u1 = new User();
+		User u2 = new User();
+		u1.setName("1");
+		u2.setName("2");
+		List<User> u = new ArrayList<>();
+		u.add(u1);
+		u.add(u2);
+		return new ResponseEntity<List<User>>(u, HttpStatus.OK);
+		
+		
+	}
 }
