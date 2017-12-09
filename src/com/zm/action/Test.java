@@ -76,14 +76,17 @@ public class Test {
 	 * userExt; }
 	 */
 
-	@RequestMapping(value = "/sendJsonListStr")
-	public @ResponseBody List<User> sendJsonListStr(@RequestBody ArrayList<User> user) {
-		ArrayList<User> userList = user;
-		for (User u : userList) {
-			System.out.println(u.toString());
+	/**
+	 * 数组 注意：@RequestParam(value="array[]")的话会报错 不可以用[]
+	 */
+	@RequestMapping(value = "/sendArrayStr")
+	public @ResponseBody User sendArrsyStr(@RequestParam(value = "array") String[] array) {
+		User user = new User();
+		user.setName(array[3]);
+		System.out.println("数组长度------>" + array.length);
+		for (String str : array) {
+			System.out.println("遍历输出数组的值是：------>" + str);
 		}
-		// System.out.println("前端获取的JSON对象集合字符串为：------>"+user);
-		// System.out.println("第三个对象的名字是：------>"+user.get(2).getUserName());
 		return user;
 	}
 }

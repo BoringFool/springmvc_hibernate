@@ -53,8 +53,7 @@
         function selectById(){  
             $.ajax({  
                 type : 'post',  
-                url : "<%=basePath%>
-		ssm/selectUserReturnByJSON",//url的三种写法  
+                url : "<%=basePath%>ssm/selectUserReturnByJSON",//url的三种写法  
 				//    /ssmaven/ssm/selectUserReturnByJSON  
 				//    ${pageContext.request.contextPath}/ssm/selectUserReturnByJSON  
 				dataType : "json",
