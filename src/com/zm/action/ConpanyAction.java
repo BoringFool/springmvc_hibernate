@@ -28,6 +28,7 @@ public class ConpanyAction {
 	@RequestMapping("/save")
 	public @ResponseBody Conpany save(@RequestBody Conpany con) {
 		conser.save(con);
+		System.out.println("1");
 		return con;
 	}
 	

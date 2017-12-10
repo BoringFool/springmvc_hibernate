@@ -37,25 +37,67 @@ $().ready(function() {
 
 </head>
 <body>
-	<div id="main" class="main">
-		<div class="scd_d">
-			<div class="scd_d_i">
-				<div class="scd_d_md ber_remv">conpanyname top_hang</div>
-				<div class="scd_d_sd ber_remv1">description scd_hangAS S啊A S</div>
-				<div class="scd_d_td ber_remv">
-					<span class="s_s">zhaopdsad</span><span class="s_s1">250</span>
-				</div>
-				<div class="scd_d_fd">offerA S啊</div>
+<script>
+		function save_conpany(){
+			var con={
+				"name":"张er",
+				"description":"a描述",
+				"num_jop":"232",
+				"offer":"哈a哈",
+				"ok":"true"		
+			};
+			$.ajax({
+				type:'post',
+				url:'${pageContext.request.contextPath}/conpany/save',
+				contentType : 'application/json;charset=utf-8',
+				data:JSON.stringify(con),
+				success:function(data){
+					alert(data);
+				}
+				
+			});
+			
+		}
+	</script>
+	<div class="show">
+	<div class="scd_d sub_show">
+		<div class="scd_d_i">
+			<div class="scd_d_md ber_remv">公司名字</div>
+			<div class="scd_d_sd ber_remv1">公司简单介绍。<br/> <br/>       <span style="color: red;">(点击添加)</span></div>
+			<div class="scd_d_td ber_remv">
+				<span class="s_s">在招职位数</span><span class="s_s1">250</span>
 			</div>
-			<div class="scd_d_fid">ok?</div>
+			<div class="scd_d_fd">wangted offer</div>
 		</div>
+		<div class="scd_d_fid">是<br/>否<br/>靠<br/>谱<br/>？</div>
+		<button type="button" class="sub" onclick="save_conpany()" style="float: left;">提交</button>
+		<button type="button" class="sub" >取消</button>
 	</div>
+	</div>
+
+
+
+
+	<div id="main" class="main">
+		<div id="create" class="scd_d">
+			<div class="scd_d_i">
+				<div class="scd_d_md ber_remv">公司名字</div>
+				<div class="scd_d_sd ber_remv1">公司简单介绍。<br/> <br/>       <span style="color: red;">(点击添加)</span></div>
+				<div class="scd_d_td ber_remv">
+					<span class="s_s">在招职位数</span><span class="s_s1">250</span>
+				</div>
+				<div class="scd_d_fd">wangted offer</div>
+			</div>
+			<div class="scd_d_fid">是<br/>否<br/>靠<br/>谱<br/>？</div>
+		</div>
+	</div>		
 	<div id="a"></div>
 	<div>
 		<p>--------------------------一:URL方式传参数或者传几个基本类型参数
 			1.HttpServletRequest req 2.@RequestParam注解
 			3.@PathVariable搭配RESTFul风格URL------------------------</p>
 		<button type="button" onclick="sendUrlParam()">点击测试url传参数controller注解方式接收</button>
+		
 		<script>
 		function sendUrlParam() {  
             $.ajax({  
