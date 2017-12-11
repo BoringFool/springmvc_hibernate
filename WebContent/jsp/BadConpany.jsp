@@ -1,3 +1,4 @@
+<%@page import="com.zm.model.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -9,22 +10,37 @@
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/conpany.js"></script>
 <script>
-$().ready(function() {
-	$(document).ready(function() {
-		$("input").click(function() {
-			$(this).hide();
-		});
-	});
-	$(".b").click(function() {
-		$(this).text(a);
-	});
-	/* $("#a").click(function(){
-		$(this).hide();
-	}); */
-	/* $(".sc_d").click(function(){
-		$(this).hide();
-	}); */
-});
+
+<% 
+	User u=new User();
+	u.setName("公司名字啊");
+	
+	String[] d={"first", "second", "third","a"};
+	request.getSession().setAttribute("zzz", d);
+	request.getSession().setAttribute("user", u);
+	request.getSession().setAttribute("ba", "1");
+%>
+/* var d = ["first", "second", "third"]; */
+a();
+
+function a(){
+	var conpanyname="${sessionScope.zzz[1]}",
+		conpanydescription="${sessionScope.zzz[0]}",
+		conpany_num="${sessionScope.zzz[2]}",
+		conpany_offer="${sessionScope.zzz[3]}";
+	  var show ="<div class=\"scd_d\">"+
+		"<div class=\"scd_d_i\">"+ 
+	    "<div class=\"scd_d\"><div class=\"scd_d_i\"><div class=\"scd_d_md ber_remv\">"+conpanyname+"</div>" +
+		"<div class=\"scd_d_sd ber_remv1\">"+conpanydescription+"</div>" +
+		"<div class=\"scd_d_td ber_remv\"><span class=\"s_s\">在招职位数</span><span class=\"s_s1\">"+conpany_num+"</span></div>" +
+		"<div class=\"scd_d_fd\">"+conpany_offer+"</div>" +
+		"</div>" +
+		"<div class=\"scd_d_fid\">是<br/>否<br/>靠<br/>谱<br/>？</div>" +
+		"</div>"
+		$(document).ready(function() {
+			$("#main").append(show);
+		});  	
+}
 </script>
 <script>
 	if (typeof jQuery == 'undefined') {
@@ -37,7 +53,7 @@ $().ready(function() {
 
 </head>
 <body>
-<script>
+	<script>
 		function save_conpany(){
 			var con={
 				"name":"张er",
@@ -53,26 +69,34 @@ $().ready(function() {
 				data:JSON.stringify(con),
 				success:function(data){
 					alert(data);
-				}
-				
+				}			
+			});	
+		}
+		
+		function get_conpany(){
+			$.ajax({
+				type:'post',
+				url:'${pageContext.request.contextPath}/conpany/get?ids=1',
+				data:"json",
+				success:function(data){
+					alert(data.name);
+				}			
 			});
-			
 		}
 	</script>
+	<!-- 其实用table布局简单 -->
 	<div class="show">
-	<div class="scd_d sub_show">
-		<div class="scd_d_i">
-			<div class="scd_d_md ber_remv">公司名字</div>
-			<div class="scd_d_sd ber_remv1">公司简单介绍。<br/> <br/>       <span style="color: red;">(点击添加)</span></div>
-			<div class="scd_d_td ber_remv">
-				<span class="s_s">在招职位数</span><span class="s_s1">250</span>
+		<div class="scd_d sub_show">
+			<div class="scd_d_i">
+				<div class="scd_d_md ber_remv"><input id="t" type="text" value="公司名字" /></div>
+				<div class="scd_d_sd ber_remv1"><textarea id="area" name="txt" clos="10" rows="4" warp="virtual" style="height: 60px; width: 317px; resize: none; overflow: hidden;">公司简单介绍</textarea></div>
+				<div class="scd_d_td ber_remv"><span class="s_s">在招职位数</span><span class="s_s1"><input id="z" type="text" style="width: 63px; height: 24px;" value="250" /></span></div>
+				<div class="scd_d_fd"><input id="w" type="text" style="width: 133px; height: 24px;" value="wangted offer" /></div>
 			</div>
-			<div class="scd_d_fd">wangted offer</div>
+			<div class="scd_d_fid">是<br />否<br />靠<br />谱<br />？</div>
+			<button type="button" class="sub" onclick="save_conpany()" style="float: left;">提交</button>
+			<button type="button" class="sub" onclick="get_conpany()">取消</button>
 		</div>
-		<div class="scd_d_fid">是<br/>否<br/>靠<br/>谱<br/>？</div>
-		<button type="button" class="sub" onclick="save_conpany()" style="float: left;">提交</button>
-		<button type="button" class="sub" >取消</button>
-	</div>
 	</div>
 
 
@@ -82,22 +106,27 @@ $().ready(function() {
 		<div id="create" class="scd_d">
 			<div class="scd_d_i">
 				<div class="scd_d_md ber_remv">公司名字</div>
-				<div class="scd_d_sd ber_remv1">公司简单介绍。<br/> <br/>       <span style="color: red;">(点击添加)</span></div>
+				<div class="scd_d_sd ber_remv1">
+					公司简单介绍。<br /> <br />
+					<span style="color: red;">(点击添加)</span>
+				</div>
 				<div class="scd_d_td ber_remv">
 					<span class="s_s">在招职位数</span><span class="s_s1">250</span>
 				</div>
 				<div class="scd_d_fd">wangted offer</div>
 			</div>
-			<div class="scd_d_fid">是<br/>否<br/>靠<br/>谱<br/>？</div>
+			<div class="scd_d_fid">
+				是<br />否<br />靠<br />谱<br />？
+			</div>
 		</div>
-	</div>		
+	</div>
 	<div id="a"></div>
 	<div>
 		<p>--------------------------一:URL方式传参数或者传几个基本类型参数
 			1.HttpServletRequest req 2.@RequestParam注解
 			3.@PathVariable搭配RESTFul风格URL------------------------</p>
 		<button type="button" onclick="sendUrlParam()">点击测试url传参数controller注解方式接收</button>
-		
+
 		<script>
 		function sendUrlParam() {  
             $.ajax({  
@@ -144,7 +173,7 @@ $().ready(function() {
 		</script>
 	</div>
 
-	<p id="a" class="b" >asdf</p>
+	<p id="a" class="b">asdf</p>
 	<div>
 		<p>--------------------------三:接收JSON格式字符串对象参数
 			@RequestBody注解传递json格式对象字符串---------------------------------------------------------------</p>
@@ -236,7 +265,7 @@ $().ready(function() {
 			data:JSON.stringify(jsonData),
 			success:function(data){
 				alert(data[1].name);
-			}
+			},
 			error:function(){
 				alert("查询失败");
 			}

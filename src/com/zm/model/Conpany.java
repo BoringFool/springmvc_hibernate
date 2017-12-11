@@ -12,7 +12,7 @@ public class Conpany {
 	@Id
 	@GeneratedValue(strategy =GenerationType.AUTO)
 	@Column(name = "id", unique = false, nullable = false)
-	private int id;
+	private Long id;
 	private String name;
 	private String description;
 	private String num_jop;
@@ -27,11 +27,11 @@ public class Conpany {
 		this.offer = offer;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

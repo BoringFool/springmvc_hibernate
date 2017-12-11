@@ -1,10 +1,12 @@
 package com.zm.action;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.zm.model.Conpany;
@@ -32,4 +34,12 @@ public class ConpanyAction {
 		return con;
 	}
 	
+	@RequestMapping("/get")
+	public @ResponseBody Conpany save(@RequestParam("ids") Long ids,  HttpServletRequest request ) {
+//		String a=request.getParameter("ids");
+		Conpany con=conser.look(ids);
+		System.out.println("1");
+		
+		return con;
+	}
 }

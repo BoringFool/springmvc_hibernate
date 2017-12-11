@@ -15,7 +15,7 @@ public class ConpanyService implements IConpanyService {
 
 	@Resource
 	private IConpanyDAO conpanydao;
-	
+
 	public IConpanyDAO getConpanydao() {
 		return conpanydao;
 	}
@@ -24,10 +24,14 @@ public class ConpanyService implements IConpanyService {
 		this.conpanydao = conpanydao;
 	}
 
-	@Override
 	public void save(Conpany con) {
 		conpanydao.add(con);
-		
+
+	}
+
+	public Conpany look(Long id) {
+		return conpanydao.getById(id);
+
 	}
 
 }
