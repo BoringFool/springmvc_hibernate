@@ -42,4 +42,13 @@ public class ConpanyAction {
 		
 		return con;
 	}
+	
+	@RequestMapping("/findall")
+	public @ResponseBody Conpany findall(@RequestParam("ids") Long ids,  HttpServletRequest request ) {
+//		String a=request.getParameter("ids");
+		Conpany con=conser.look(ids);
+		System.out.println("1");
+		
+		return con;
+	}
 }

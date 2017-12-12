@@ -16,31 +16,31 @@
 	u.setName("公司名字啊");
 	
 	String[] d={"first", "second", "third","a"};
-	request.getSession().setAttribute("zzz", d);
-	request.getSession().setAttribute("user", u);
-	request.getSession().setAttribute("ba", "1");
+	String[] n={"firstdd", "seconddd", "thirddd","add"};
+	Boolean k=true;
+	if(k){
+		request.getSession().setAttribute("zzz",d);
+%>
+
+<%	
+	k=false;
+	};
+	
+	if(k){
+		
+	}else{
+		request.getSession().setAttribute("zzz", n);
+	
+
+%>
+
+<%	
+	};
 %>
 /* var d = ["first", "second", "third"]; */
-a();
 
-function a(){
-	var conpanyname="${sessionScope.zzz[1]}",
-		conpanydescription="${sessionScope.zzz[0]}",
-		conpany_num="${sessionScope.zzz[2]}",
-		conpany_offer="${sessionScope.zzz[3]}";
-	  var show ="<div class=\"scd_d\">"+
-		"<div class=\"scd_d_i\">"+ 
-	    "<div class=\"scd_d\"><div class=\"scd_d_i\"><div class=\"scd_d_md ber_remv\">"+conpanyname+"</div>" +
-		"<div class=\"scd_d_sd ber_remv1\">"+conpanydescription+"</div>" +
-		"<div class=\"scd_d_td ber_remv\"><span class=\"s_s\">在招职位数</span><span class=\"s_s1\">"+conpany_num+"</span></div>" +
-		"<div class=\"scd_d_fd\">"+conpany_offer+"</div>" +
-		"</div>" +
-		"<div class=\"scd_d_fid\">是<br/>否<br/>靠<br/>谱<br/>？</div>" +
-		"</div>"
-		$(document).ready(function() {
-			$("#main").append(show);
-		});  	
-}
+
+
 </script>
 <script>
 	if (typeof jQuery == 'undefined') {
@@ -54,6 +54,23 @@ function a(){
 </head>
 <body>
 	<script>
+	  function a(){
+			var conpanyname="${sessionScope.zzz[1]}",
+				conpanydescription="${sessionScope.zzz[0]}",
+				conpany_num="${sessionScope.zzz[2]}",
+				conpany_offer="${sessionScope.zzz[3]}";
+			  var show = "<div class=\"scd_d\"><div class=\"scd_d_i\"><div class=\"scd_d_md ber_remv\">"+conpanyname+"</div>" +
+				"<div class=\"scd_d_sd ber_remv1\">"+conpanydescription+"</div>" +
+				"<div class=\"scd_d_td ber_remv\"><span class=\"s_s\">在招职位数</span><span class=\"s_s1\">"+conpany_num+"</span></div>" +
+				"<div class=\"scd_d_fd\">"+conpany_offer+"</div>" +
+				"</div>" +
+				"<div class=\"scd_d_fid\">是<br/>否<br/>靠<br/>谱<br/>？</div>" +
+				"</div>"
+				$(document).ready(function() {
+					$("#main").append(show);
+				});  	
+		}
+	 
 		function save_conpany(){
 			var con={
 				"name":"张er",
@@ -89,7 +106,7 @@ function a(){
 		<div class="scd_d sub_show">
 			<div class="scd_d_i">
 				<div class="scd_d_md ber_remv"><input id="t" type="text" value="公司名字" /></div>
-				<div class="scd_d_sd ber_remv1"><textarea id="area" name="txt" clos="10" rows="4" warp="virtual" style="height: 60px; width: 317px; resize: none; overflow: hidden;">公司简单介绍</textarea></div>
+				<div class="scd_d_sd ber_remv1"><textarea id="area" name="txt"  rows="4"  style="height: 60px; width: 317px; resize: none; overflow: hidden;">公司简单介绍</textarea></div>
 				<div class="scd_d_td ber_remv"><span class="s_s">在招职位数</span><span class="s_s1"><input id="z" type="text" style="width: 63px; height: 24px;" value="250" /></span></div>
 				<div class="scd_d_fd"><input id="w" type="text" style="width: 133px; height: 24px;" value="wangted offer" /></div>
 			</div>

@@ -68,23 +68,18 @@ $()
 			
 			
 			/**/
-			  function a(){
-				  var show ="<div class=\"scd_d\">"+
-					"<div class=\"scd_d_i\">"+ 
-				    "<div class=\"scd_d\"><div class=\"scd_d_i\"><div class=\"scd_d_md ber_remv\">公司名字</div>" +
-					"<div class=\"scd_d_sd ber_remv1\">公司简单介绍。</div>" +
-					"<div class=\"scd_d_td ber_remv\"><span class=\"s_s\">在招职位数</span><span class=\"s_s1\">250</span></div>" +
-					"<div class=\"scd_d_fd\">wangted offer</div>" +
-					"</div>" +
-					"<div class=\"scd_d_fid\">是<br/>否<br/>靠<br/>谱<br/>？</div>" +
-					"</div>"
-					$(document).ready(function() {
-						$("#main").append(show);
-					});  	
-			  }
-			 
+			
 
 			/**/
+			  a();
+			  a();
+			  a();
+			  a();
+			  a();
+			  a();
+			  a();
+			  a();
+			  a();
 			/**/
 			/**/
 			/**/
