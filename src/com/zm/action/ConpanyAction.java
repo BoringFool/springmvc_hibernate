@@ -1,5 +1,7 @@
 package com.zm.action;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
@@ -44,11 +46,8 @@ public class ConpanyAction {
 	}
 	
 	@RequestMapping("/findall")
-	public @ResponseBody Conpany findall(@RequestParam("ids") Long ids,  HttpServletRequest request ) {
-//		String a=request.getParameter("ids");
-		Conpany con=conser.look(ids);
-		System.out.println("1");
-		
-		return con;
+	public @ResponseBody List<Conpany> findall() {
+		System.out.println("1");		
+		return conser.findall();
 	}
 }

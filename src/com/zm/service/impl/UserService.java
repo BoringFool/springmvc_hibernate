@@ -1,5 +1,7 @@
 package com.zm.service.impl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -26,6 +28,11 @@ public class UserService implements IUserService {
 	public void act(User u) {
 		userdao.add(u);
 
+	}
+
+
+	public List<User> findall() {
+		return userdao.findall();
 	}
 
 }

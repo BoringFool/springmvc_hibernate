@@ -11,36 +11,19 @@
 <script src="../js/conpany.js"></script>
 <script>
 
-<% 
-	User u=new User();
-	u.setName("公司名字啊");
-	
-	String[] d={"first", "second", "third","a"};
-	String[] n={"firstdd", "seconddd", "thirddd","add"};
-	Boolean k=true;
-	if(k){
-		request.getSession().setAttribute("zzz",d);
-%>
-
-<%	
-	k=false;
-	};
-	
-	if(k){
-		
-	}else{
-		request.getSession().setAttribute("zzz", n);
-	
-
-%>
-
-<%	
-	};
-%>
-/* var d = ["first", "second", "third"]; */
-
-
-
+<%User u = new User();
+			u.setName("公司名字啊");
+			String[] d = {"first", "second", "third", "a"};
+			String[] n = {"firstdd", "seconddd", "thirddd", "add"};
+			Boolean k = true;
+			if (k) {
+				request.getSession().setAttribute("zzz", d);
+				k = false;
+			} ;
+			if (k) {
+			} else {
+				request.getSession().setAttribute("zzz", n);
+			} ;%>
 </script>
 <script>
 	if (typeof jQuery == 'undefined') {
@@ -51,35 +34,35 @@
 	String basePath = request.getContextPath();
 %>
 
+
 </head>
 <body>
-	<script>
-	  function a(){
-			var conpanyname="${sessionScope.zzz[1]}",
-				conpanydescription="${sessionScope.zzz[0]}",
-				conpany_num="${sessionScope.zzz[2]}",
-				conpany_offer="${sessionScope.zzz[3]}";
-			  var show = "<div class=\"scd_d\"><div class=\"scd_d_i\"><div class=\"scd_d_md ber_remv\">"+conpanyname+"</div>" +
-				"<div class=\"scd_d_sd ber_remv1\">"+conpanydescription+"</div>" +
-				"<div class=\"scd_d_td ber_remv\"><span class=\"s_s\">在招职位数</span><span class=\"s_s1\">"+conpany_num+"</span></div>" +
-				"<div class=\"scd_d_fd\">"+conpany_offer+"</div>" +
-				"</div>" +
-				"<div class=\"scd_d_fid\">是<br/>否<br/>靠<br/>谱<br/>？</div>" +
-				"</div>"
-				$(document).ready(function() {
-					$("#main").append(show);
-				});  	
-		}
-	 
-		function save_conpany(){
-			var con={
-				"name":"张er",
-				"description":"a描述",
-				"num_jop":"232",
-				"offer":"哈a哈",
+<script>
+	function a(){
+		
+			 var show = "<div class=\"scd_d\"><div class=\"scd_d_i\"><div class=\"scd_d_md ber_remv\">"+name+"</div>" +
+			"<div class=\"scd_d_sd ber_remv1\">"+description+"</div>" +
+			"<div class=\"scd_d_td ber_remv\"><span class=\"s_s\">在招职位数</span><span class=\"s_s1\">"+num_jop+"</span></div>" +
+			"<div class=\"scd_d_fd\">"+offer+"</div>" +
+			"</div>" +
+			"<div class=\"scd_d_fid\">是<br/>否<br/>靠<br/>谱<br/>？</div>" +
+			"</div>";
+			$(document).ready(function() {
+				$("#main").append(show);
+			});  	
+	}
+
+	
+	
+	function save_conpany(){
+		var con={
+				"name":"a张",
+				"description":"aa",
+				"num_jop":"a23",
+				"offer":"a哈哈",
 				"ok":"true"		
 			};
-			$.ajax({
+		$.ajax({
 				type:'post',
 				url:'${pageContext.request.contextPath}/conpany/save',
 				contentType : 'application/json;charset=utf-8',
@@ -88,10 +71,12 @@
 					alert(data);
 				}			
 			});	
-		}
-		
-		function get_conpany(){
-			$.ajax({
+	}
+	
+	
+	
+	function get_conpany(){
+		$.ajax({
 				type:'post',
 				url:'${pageContext.request.contextPath}/conpany/get?ids=1',
 				data:"json",
@@ -99,20 +84,57 @@
 					alert(data.name);
 				}			
 			});
-		}
+	}
+	var name,description,num_jop,offer;
+	
+	function findAll(){
+		$.ajax({
+			type:"post",
+			url:"${pageContext.request.contextPath}/conpany/findall",
+			dataType:"json",
+			success:function(data){
+				for(var i=0;i<data.size();i++){
+					var aaa=data[i];
+				    name=aaa.name;
+				    description=aaa.description;
+				    num_jop=aaa.num_jop;
+				    offer=aaa.offer;
+					a();
+				    alert(1);	
+				};
+			},
+			error:function(){
+				alert("wrong");
+			}
+		});
+	}
 	</script>
 	<!-- 其实用table布局简单 -->
 	<div class="show">
 		<div class="scd_d sub_show">
 			<div class="scd_d_i">
-				<div class="scd_d_md ber_remv"><input id="t" type="text" value="公司名字" /></div>
-				<div class="scd_d_sd ber_remv1"><textarea id="area" name="txt"  rows="4"  style="height: 60px; width: 317px; resize: none; overflow: hidden;">公司简单介绍</textarea></div>
-				<div class="scd_d_td ber_remv"><span class="s_s">在招职位数</span><span class="s_s1"><input id="z" type="text" style="width: 63px; height: 24px;" value="250" /></span></div>
-				<div class="scd_d_fd"><input id="w" type="text" style="width: 133px; height: 24px;" value="wangted offer" /></div>
+				<div class="scd_d_md ber_remv">
+					<input id="t" type="text" value="公司名字" />
+				</div>
+				<div class="scd_d_sd ber_remv1">
+					<textarea id="area" name="txt" rows="4"
+						style="height: 60px; width: 317px; resize: none; overflow: hidden;">公司简单介绍</textarea>
+				</div>
+				<div class="scd_d_td ber_remv">
+					<span class="s_s">在招职位数</span><span class="s_s1"><input
+						id="z" type="text" style="width: 63px; height: 24px;" value="250" /></span>
+				</div>
+				<div class="scd_d_fd">
+					<input id="w" type="text" style="width: 133px; height: 24px;"
+						value="wangted offer" />
+				</div>
 			</div>
-			<div class="scd_d_fid">是<br />否<br />靠<br />谱<br />？</div>
-			<button type="button" class="sub" onclick="save_conpany()" style="float: left;">提交</button>
-			<button type="button" class="sub" onclick="get_conpany()">取消</button>
+			<div class="scd_d_fid">
+				是<br />否<br />靠<br />谱<br />？
+			</div>
+			<button type="button" class="sub" onclick="save_conpany()"
+				style="float: left;">提交</button>
+			<button type="button" class="sub" onclick="findAll()">取消</button>
 		</div>
 	</div>
 
@@ -124,8 +146,7 @@
 			<div class="scd_d_i">
 				<div class="scd_d_md ber_remv">公司名字</div>
 				<div class="scd_d_sd ber_remv1">
-					公司简单介绍。<br /> <br />
-					<span style="color: red;">(点击添加)</span>
+					公司简单介绍。<br /> <br /> <span style="color: red;">(点击添加)</span>
 				</div>
 				<div class="scd_d_td ber_remv">
 					<span class="s_s">在招职位数</span><span class="s_s1">250</span>
@@ -171,7 +192,8 @@
 		function selectById(){  
 			$.ajax({  
                 type : 'post',  
-                url : "<%=basePath%>/a/selectUserReturnByJSON",
+                url : "<%=basePath%>
+			/a/selectUserReturnByJSON",
 					//url的三种写法  
 					//    /ssmaven/ssm/selectUserReturnByJSON  
 					//    ${pageContext.request.contextPath}/ssm/selectUserReturnByJSON  
@@ -179,13 +201,13 @@
 					success : function(data) {
 						console.log(data);
 						a = data[0].name;
-						alert("1"+a);
+						alert("1" + a);
 					},
 					error : function() {
 						alert("查询失败");
 					}
 				});
-			alert("2"+a);
+				alert("2" + a);
 			}
 		</script>
 	</div>
@@ -227,67 +249,67 @@
 		<p>---------------------------三：传递数组(批量删除)-----------------------------------------------------------------------------------------------------------------</p>
 		<button type="button" onclick="sendArrayStr()">点击发送数组到后台</button>
 		<script type="text/javascript">
-		function sendArrayStr() {
-			//1.字面方式定义数组  
-			/* var arrayStr = []; 
-			arrayStr.push("大草原"); 
-			arrayStr.push("大白兔"); 
-			arrayStr.push("白又白"); 
-			arrayStr.push("两只耳朵竖起来"); */
-			//2.常规方式定义数组  
-			var arrayStr = new Array();
-			arrayStr[0] = "风吹";
-			arrayStr[1] = "草地";
-			arrayStr[2] = "见牛羊";
-			arrayStr[3] = "哗哗哗";
-			$.ajax({
-				type : 'post',
-				url : '${pageContext.request.contextPath }/a/sendArrayStr',
-				traditional : true,//注意，必须要有个设置否则传递数组报400错误。默认为false深度序列化，在此改为true  
-				data : {
-					"array" : arrayStr
-				},
-				success : function(data) {//返回json结果  
-					alert(data.name);
-				}
-			});
-		}
+			function sendArrayStr() {
+				//1.字面方式定义数组  
+				/* var arrayStr = []; 
+				arrayStr.push("大草原"); 
+				arrayStr.push("大白兔"); 
+				arrayStr.push("白又白"); 
+				arrayStr.push("两只耳朵竖起来"); */
+				//2.常规方式定义数组  
+				var arrayStr = new Array();
+				arrayStr[0] = "风吹";
+				arrayStr[1] = "草地";
+				arrayStr[2] = "见牛羊";
+				arrayStr[3] = "哗哗哗";
+				$.ajax({
+					type : 'post',
+					url : '${pageContext.request.contextPath }/a/sendArrayStr',
+					traditional : true,//注意，必须要有个设置否则传递数组报400错误。默认为false深度序列化，在此改为true  
+					data : {
+						"array" : arrayStr
+					},
+					success : function(data) {//返回json结果  
+						alert(data.name);
+					}
+				});
+			}
 		</script>
 	</div>
 	<div>
 		<button type="button" onclick="sendList()">3.点击发送json字符串到后台(集合对象)</button>
 		<script>
-		function sendList(){
-		alert("1");
-		  var jsonData = [ { 
-		        "userId" : "111", 
-		        "userName" : "卡丽熙", 
-		        "userPassword" : "12138", 
-		        "userEmail" : "888888@gmail.com", 
-		    }, { 
-		        "userId" : "222", 
-		        "userName" : "瑟太后", 
-		        "userPassword" : "23222", 
-		        "userEmail" : "7777777@gmail.com", 
-		    }, { 
-		        "userId" : "333", 
-		        "userName" : "三傻", 
-		        "userPassword" : "54323", 
-		        "userEmail" : "934333@gmail.com", 
-		    } ]; 
-		  $.ajax({
-			  type:'post',
-			  url:'${pageContext.request.contextPath}/a/sendList',
-			contentType:'application/json;charset',
-			data:JSON.stringify(jsonData),
-			success:function(data){
-				alert(data[1].name);
-			},
-			error:function(){
-				alert("查询失败");
+			function sendList() {
+				alert("1");
+				var jsonData = [ {
+					"userId" : "111",
+					"userName" : "卡丽熙",
+					"userPassword" : "12138",
+					"userEmail" : "888888@gmail.com",
+				}, {
+					"userId" : "222",
+					"userName" : "瑟太后",
+					"userPassword" : "23222",
+					"userEmail" : "7777777@gmail.com",
+				}, {
+					"userId" : "333",
+					"userName" : "三傻",
+					"userPassword" : "54323",
+					"userEmail" : "934333@gmail.com",
+				} ];
+				$.ajax({
+					type : 'post',
+					url : '${pageContext.request.contextPath}/a/sendList',
+					contentType : 'application/json;charset',
+					data : JSON.stringify(jsonData),
+					success : function(data) {
+						alert(data[1].name);
+					},
+					error : function() {
+						alert("查询失败");
+					}
+				});
 			}
-		  });
-		}
 		</script>
 	</div>
 </body>

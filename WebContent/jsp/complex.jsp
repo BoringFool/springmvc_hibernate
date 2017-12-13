@@ -51,5 +51,25 @@
 		});
 	};
 	</script>
+	
+	<!-- controller to jsp and show -->
+	<button type="button" onclick="findall()">获取</button>
+	<script>
+		function findall(){
+			$.ajax({  
+                type : 'post',  
+                url : "{pageContext.request.contextPath}/complex/find",
+				dataType : "json",
+				success : function(data) {					
+					var name = data[0].name;
+					alert(name);
+				},
+				error : function() {
+					alert("查询失败");
+				}
+			});
+		}
+		
+	</script>
 </body>
 </html>

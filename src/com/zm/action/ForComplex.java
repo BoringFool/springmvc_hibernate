@@ -3,16 +3,19 @@ package com.zm.action;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.zm.model.Conpany;
 import com.zm.model.JsonArr;
+import com.zm.service.IConpanyService;
 
 
 
@@ -20,6 +23,26 @@ import com.zm.model.JsonArr;
 @Controller
 @RequestMapping("/complex")
 public class ForComplex {
+	
+	
+	@Resource
+	private IConpanyService conser;
+	
+	public IConpanyService getConser() {
+		return conser;
+	}
+
+	public void setConser(IConpanyService conser) {
+		this.conser = conser;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * form通过input的name传旨，用request。getparameter来获得值
 	 * */
@@ -44,6 +67,33 @@ public class ForComplex {
 		for(JsonArr b:a) {
 			System.out.println(b.getA()+b.getB()+b.getC());	
 		};
+		
+		
+		
+		List<Conpany> con= conser.findall();
+		System.out.println(con);
 		return a;
+	}
+	
+	/*
+	 * */
+	@RequestMapping("/find")
+	public @ResponseBody List<Conpany> find() {
+		List<Conpany> con= conser.findall();
+		
+		 for(Conpany b:con) {
+			System.out.println(b.getName());	
+		};
+		return con;
+	}
+	
+	@RequestMapping("/at")
+	public void at() {
+		List<Conpany> con= conser.findall();
+		
+		 for(Conpany b:con) {
+			System.out.println(b.getName());	
+		};
+		
 	}
 }
