@@ -47,7 +47,10 @@ public class ConpanyAction {
 	
 	@RequestMapping("/findall")
 	public @ResponseBody List<Conpany> findall() {
-		System.out.println("1");		
-		return conser.findall();
+		List<Conpany> con=conser.findall();
+		for(Conpany c:con) {
+			System.out.println(c.getName());
+		}
+		return con;
 	}
 }

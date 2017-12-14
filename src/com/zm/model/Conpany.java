@@ -18,7 +18,7 @@ public class Conpany {
 	private Long id;
 	private String name;
 	private String description;
-	private String num_jop;
+	private Integer num_jop;
 	private String offer;
 	private boolean ok;
 
@@ -54,11 +54,13 @@ public class Conpany {
 		this.description = description;
 	}
 
-	public String getNum_jop() {
+
+
+	public Integer getNum_jop() {
 		return num_jop;
 	}
 
-	public void setNum_jop(String num_jop) {
+	public void setNum_jop(Integer num_jop) {
 		this.num_jop = num_jop;
 	}
 

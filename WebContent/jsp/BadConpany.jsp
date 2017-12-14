@@ -10,71 +10,14 @@
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/conpany.js"></script>
 <script>
-
-<%User u = new User();
-			u.setName("公司名字啊");
-			String[] d = {"first", "second", "third", "a"};
-			String[] n = {"firstdd", "seconddd", "thirddd", "add"};
-			Boolean k = true;
-			if (k) {
-				request.getSession().setAttribute("zzz", d);
-				k = false;
-			} ;
-			if (k) {
-			} else {
-				request.getSession().setAttribute("zzz", n);
-			} ;%>
-</script>
-<script>
+	<% String basePath = request.getContextPath(); %>
 	if (typeof jQuery == 'undefined') {
 		window.alert("没有jquery");
 	}
 </script>
-<%
-	String basePath = request.getContextPath();
-%>
-
-
 </head>
 <body>
-<script>
-	function a(){
-		
-			 var show = "<div class=\"scd_d\"><div class=\"scd_d_i\"><div class=\"scd_d_md ber_remv\">"+name+"</div>" +
-			"<div class=\"scd_d_sd ber_remv1\">"+description+"</div>" +
-			"<div class=\"scd_d_td ber_remv\"><span class=\"s_s\">在招职位数</span><span class=\"s_s1\">"+num_jop+"</span></div>" +
-			"<div class=\"scd_d_fd\">"+offer+"</div>" +
-			"</div>" +
-			"<div class=\"scd_d_fid\">是<br/>否<br/>靠<br/>谱<br/>？</div>" +
-			"</div>";
-			$(document).ready(function() {
-				$("#main").append(show);
-			});  	
-	}
-
-	
-	
-	function save_conpany(){
-		var con={
-				"name":"a张",
-				"description":"aa",
-				"num_jop":"a23",
-				"offer":"a哈哈",
-				"ok":"true"		
-			};
-		$.ajax({
-				type:'post',
-				url:'${pageContext.request.contextPath}/conpany/save',
-				contentType : 'application/json;charset=utf-8',
-				data:JSON.stringify(con),
-				success:function(data){
-					alert(data);
-				}			
-			});	
-	}
-	
-	
-	
+<script>	
 	function get_conpany(){
 		$.ajax({
 				type:'post',
@@ -85,31 +28,10 @@
 				}			
 			});
 	}
-	var name,description,num_jop,offer;
-	
-	function findAll(){
-		$.ajax({
-			type:"post",
-			url:"${pageContext.request.contextPath}/conpany/findall",
-			dataType:"json",
-			success:function(data){
-				for(var i=0;i<data.size();i++){
-					var aaa=data[i];
-				    name=aaa.name;
-				    description=aaa.description;
-				    num_jop=aaa.num_jop;
-				    offer=aaa.offer;
-					a();
-				    alert(1);	
-				};
-			},
-			error:function(){
-				alert("wrong");
-			}
-		});
-	}
-	</script>
+
+</script>
 	<!-- 其实用table布局简单 -->
+ 	 <!--  添加用<div -->
 	<div class="show">
 		<div class="scd_d sub_show">
 			<div class="scd_d_i">
@@ -134,13 +56,13 @@
 			</div>
 			<button type="button" class="sub" onclick="save_conpany()"
 				style="float: left;">提交</button>
-			<button type="button" class="sub" onclick="findAll()">取消</button>
+			<button id="back" type="button" class="sub">取消</button>
 		</div>
 	</div>
 
 
 
-
+	<!-- 触发添加<div -->
 	<div id="main" class="main">
 		<div id="create" class="scd_d">
 			<div class="scd_d_i">
@@ -158,11 +80,11 @@
 			</div>
 		</div>
 	</div>
-	<div id="a"></div>
+	<br/><br/><br/><br/><br/>
 	<div>
-		<p>--------------------------一:URL方式传参数或者传几个基本类型参数
+		<p>一:URL方式传参数或者传几个基本类型参数
 			1.HttpServletRequest req 2.@RequestParam注解
-			3.@PathVariable搭配RESTFul风格URL------------------------</p>
+			3.@PathVariable搭配RESTFul风格URL</p>
 		<button type="button" onclick="sendUrlParam()">点击测试url传参数controller注解方式接收</button>
 
 		<script>
@@ -184,8 +106,8 @@
 	</div>
 
 	<div>
-		<p>--------------------------二:返回JSON格式字符串对象参数
-			@ResponseBody注解演示------------------------------------------------------------------------------------------</p>
+		<p>二:返回JSON格式字符串对象参数
+			@ResponseBody注解演示</p>
 		<button type="button" onclick="selectById()">@ResponseBody注解演示</button>
 		<script>
 		var a;
@@ -214,11 +136,11 @@
 
 	<p id="a" class="b">asdf</p>
 	<div>
-		<p>--------------------------三:接收JSON格式字符串对象参数
-			@RequestBody注解传递json格式对象字符串---------------------------------------------------------------</p>
+		<p>三:接收JSON格式字符串对象参数
+			@RequestBody注解传递json格式对象字符串</p>
 		<button type="button" onclick="sendJsonStr()">1.点击发送json字符串到后台(单一对象)</button>
 
-		<button type="button" onclick="sendComplexJsonStr()">2.点击发送嵌套json字符串到后台(复杂对象)</button>
+		<button type="button" onclick="findAll()">2.点击发送嵌套json字符串到后台(复杂对象)</button>
 
 
 		<script type="text/javascript">
@@ -246,7 +168,7 @@
 	</div>
 
 	<div>
-		<p>---------------------------三：传递数组(批量删除)-----------------------------------------------------------------------------------------------------------------</p>
+		<p>三：传递数组(批量删除)</p>
 		<button type="button" onclick="sendArrayStr()">点击发送数组到后台</button>
 		<script type="text/javascript">
 			function sendArrayStr() {

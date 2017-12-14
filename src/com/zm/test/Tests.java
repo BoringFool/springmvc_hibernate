@@ -27,9 +27,14 @@ public class Tests {
 			System.out.println(c.toString());
 		}*/
 		
-		List<User> con=userservice.findall();
+		/*List<User> con=userservice.findall();
 		for(User c:con) {
 			System.out.println(c.toString());
+		}*/
+		Long[] ds= {1l};
+		List<Conpany> con=conpanyservice.getByIds(ds);
+		for(Conpany c:con) {
+			System.out.println(c.getName());
 		}
 	}
 }

@@ -53,7 +53,7 @@ public class BaseDAO<T> implements IBaseDAO<T> {
 
 	@Override
 	public List<T> findall() {
-		String hql = "FROM" + clazz.getSimpleName();
+		String hql = "FROM " + clazz.getSimpleName();
 		return getSession().createQuery(hql).list();
 	}
 
@@ -64,7 +64,7 @@ public class BaseDAO<T> implements IBaseDAO<T> {
 
 	@Override
 	public List<T> getByIds(Long[] ids) {
-		String hql = "FROM" + clazz.getSimpleName()+"WHERE ID in(:ids)";
+		String hql = "FROM " + clazz.getSimpleName()+" WHERE ID in(:ids)";
 		Query q=getSession().createQuery(hql);
 		q.setParameterList("ids", ids);
 		return q.list();

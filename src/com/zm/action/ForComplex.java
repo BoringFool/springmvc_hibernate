@@ -80,7 +80,6 @@ public class ForComplex {
 	@RequestMapping("/find")
 	public @ResponseBody List<Conpany> find() {
 		List<Conpany> con= conser.findall();
-		
 		 for(Conpany b:con) {
 			System.out.println(b.getName());	
 		};

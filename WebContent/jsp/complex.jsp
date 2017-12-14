@@ -56,9 +56,10 @@
 	<button type="button" onclick="findall()">获取</button>
 	<script>
 		function findall(){
-			$.ajax({  
+			$.ajax({ 
+				
                 type : 'post',  
-                url : "{pageContext.request.contextPath}/complex/find",
+                url : "${pageContext.request.contextPath}/complex/find",
 				dataType : "json",
 				success : function(data) {					
 					var name = data[0].name;
