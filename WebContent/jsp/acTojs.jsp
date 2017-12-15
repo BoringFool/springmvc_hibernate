@@ -11,7 +11,7 @@
 %>
 </head>
 <body>
-
+<!-- 测试form提交，根据name属性来传值。 -->
 	<button type="button" onclick="a()">aa</button>
 
 	<script>

@@ -12,7 +12,7 @@ import com.zm.model.User2;
  * */
 @Controller
 @RequestMapping("/data")
-public class DataAc {
+public class FormsInput {
 
 	/*
 	 * 基本数据类型，不过最好把数据包装下，防止值为空时报错

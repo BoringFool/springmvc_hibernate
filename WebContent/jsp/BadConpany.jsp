@@ -28,7 +28,9 @@
 				}			
 			});
 	}
-
+	  
+	
+	
 </script>
 	<!-- 其实用table布局简单 -->
  	 <!--  添加用<div -->
@@ -54,7 +56,7 @@
 			<div class="scd_d_fid">
 				是<br />否<br />靠<br />谱<br />？
 			</div>
-			<button type="button" class="sub" onclick="save_conpany()"
+			<button type="button" class="sub" 
 				style="float: left;">提交</button>
 			<button id="back" type="button" class="sub">取消</button>
 		</div>
@@ -80,6 +82,7 @@
 			</div>
 		</div>
 	</div>
+	<p>因为麻烦，是否靠谱由数据库直接更改，就不添加方法了。ps(填写内容是否为空，只能判断null和空格，而且貌似还是一个空格)。因为是自己用就就仅有添加，删除和更改都在数据库直接操作。</p>
 	<br/><br/><br/><br/><br/>
 	<div>
 		<p>一:URL方式传参数或者传几个基本类型参数

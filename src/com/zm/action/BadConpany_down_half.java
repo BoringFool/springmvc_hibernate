@@ -19,7 +19,7 @@ import com.zm.service.IUserService;
 
 @Controller
 @RequestMapping("/a")
-public class Test {
+public class BadConpany_down_half {
 
 	@Resource
 	private IUserService userservice;

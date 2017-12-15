@@ -57,11 +57,11 @@ input {
 .scd_d_fid {
 	width: 38px;
 	float: left;
-	height: 121px;
+	height: 118px;
 	margin-top: 2px;
 	border: 1px solid #cdcdcd;
 	border-top: none;
-	border-bottom: none;
+	
 }
 
 .s_s {

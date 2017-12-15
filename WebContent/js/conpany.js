@@ -7,13 +7,28 @@ $().ready(function() {
 					});
 			
 			$("#back").click(function() {
-				$(".show").css({"display" : "none"});
+				$(location).attr("href","http://localhost:8080/springmvc_hibernate/jsp/BadConpany.jsp");
+					});
+			$(".sub").click(function() {
+				
+				var nu=$("#z").val();
+				if((($("#t").val())!=null&&($("#area").val())!=null&&($("#w").val())!=null)&&(($("#t").val())!=""&&($("#area").val())!=""&&($("#w").val())!="")){
+					if(isNaN(nu)){
+						alert("职位数必须是数字！");
+					}else{
+						save_conpany();
+					}
+				}else{
+					alert("可填选项不可为空！！！");
+				}
+				
+				
 					});
 			/*
 			 * 添加<div展示块
 			 * 
 			 * */		
-			var name,description,num_jop,offer;
+			var name,description,num_jop,offer,ok,bc;
 			
 			function findAll(){
 				$.ajax({
@@ -27,6 +42,13 @@ $().ready(function() {
 						    description=aaa.description;
 						    num_jop=aaa.num_jop;
 						    offer=aaa.offer;
+							ok=aaa.ok;
+							if(ok){
+								 bc="#00d900";
+							 } else{
+								 bc="#ff7979";
+							 }
+							
 							a();
 						    	
 						};
@@ -44,7 +66,7 @@ $().ready(function() {
 							"<div class=\"scd_d_td ber_remv\"><span class=\"s_s\">在招职位数</span><span class=\"s_s1\">"+num_jop+"</span></div>" +
 							"<div class=\"scd_d_fd\">"+offer+"</div>" +
 							"</div>" +
-							"<div class=\"scd_d_fid\">是<br/>否<br/>靠<br/>谱<br/>？</div>" +
+							"<div class=\"scd_d_fid\" style=\" color: #ffffff; background-color:"+bc+"; \"></div>" +
 							"</div>";
 				$(document).ready(function() {
 					$("#main").append(show);
@@ -98,7 +120,7 @@ $().ready(function() {
 			
 			
 			/*
-			 * 添加展示块
+			 * 添加展示块,添加成功并跳转会展示页面
 			 * */
 			  function save_conpany(){	
 					var con={
@@ -106,7 +128,7 @@ $().ready(function() {
 							"description":$("#area").val(),
 							"num_jop":$("#z").val(),
 							"offer":$("#w").val(),
-							"ok":"true"		
+							"ok":"true"	
 						};
 					$.ajax({
 							type:"post",
@@ -114,12 +136,13 @@ $().ready(function() {
 							contentType : "application/json;charset=utf-8",
 							data:JSON.stringify(con),
 							success:function(data){
-								alert("添加成功！！！");
+								$(location).attr("href","http://localhost:8080/springmvc_hibernate/jsp/BadConpany.jsp");
 							}			
 						});	
 				}
 
 			/**/
+			  
 			  
 			/**/
 			/**/
@@ -146,8 +169,5 @@ $().ready(function() {
 		 	$(".sc_d").click(function(){
 			$(this).hide();
 			}); */ 	 	
-					
-					
-					
-					
+						
 				});

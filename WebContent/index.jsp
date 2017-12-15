@@ -10,7 +10,8 @@
 %>
 </head>
 <body>
-
+	<a href="http://localhost:8080/springmvc_hibernate/jsp/BadConpany.jsp">公司页面</a>
+	<a href="http://localhost:8080/springmvc_hibernate/jsp/logo.jsp">登陆页面</a>
 	<form action="<%=a%>/user/service.do">
 		<input type="submit" value="提交" />
 	</form>
