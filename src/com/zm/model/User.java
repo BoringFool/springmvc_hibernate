@@ -12,14 +12,9 @@ public class User {
 	@Id
 	@Column(name = "id", unique = false, nullable = false)
 	private int id;
-	private String name;
+	private String username;
 	private String password;
 	private String email;
-
-	public String toString() {
-		
-		return this.getName() ;
-	}
 
 	public String getEmail() {
 		return email;
@@ -37,12 +32,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getPassword() {

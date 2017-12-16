@@ -36,7 +36,7 @@ public class BadConpany_down_half {
 	public @ResponseBody User testURLSendParam(@RequestParam("testName") String name, HttpServletRequest req) {
 		// String name=req.getParameter("testName");
 		User user = new User();
-		user.setName(name);
+		user.setUsername(name);
 		System.out.println("成功----------------------URL传递的名字是：" + name);
 		return user;
 	}
@@ -47,13 +47,13 @@ public class BadConpany_down_half {
 		User user1 = new User();
 		user1.setEmail("23213212@qq.com");
 		user1.setId(11);
-		user1.setName("sam");
+		user1.setUsername("sam");
 		user1.setPassword("123321");
 
 		User user2 = new User();
 		user2.setEmail("46432322@qq.com");
 		user2.setId(22);
-		user2.setName("john");
+		user2.setUsername("john");
 		user2.setPassword("1234533");
 		userList.add(user1);
 		userList.add(user2);
@@ -64,7 +64,7 @@ public class BadConpany_down_half {
 	public @ResponseBody User saveUser(@RequestBody User user) {
 		userservice.act(user);
 		System.out.println(user);
-		System.out.println("前端发送的json对象字符串的名字是：" + user.getName());
+		System.out.println("前端发送的json对象字符串的名字是：" + user.getUsername());
 		return user;
 	}
 
@@ -82,7 +82,7 @@ public class BadConpany_down_half {
 	@RequestMapping(value = "/sendArrayStr")
 	public @ResponseBody User sendArrsyStr(@RequestParam(value = "array") String[] array) {
 		User user = new User();
-		user.setName(array[3]);
+		user.setUsername(array[3]);
 		System.out.println("数组长度------>" + array.length);
 		for (String str : array) {
 			System.out.println("遍历输出数组的值是：------>" + str);
@@ -94,8 +94,8 @@ public class BadConpany_down_half {
 	public ResponseEntity<List<User>> bb() {
 		User u1 = new User();
 		User u2 = new User();
-		u1.setName("1");
-		u2.setName("2");
+		u1.setUsername("1");
+		u2.setUsername("2");
 		List<User> u = new ArrayList<>();
 		u.add(u1);
 		u.add(u2);

@@ -35,4 +35,10 @@ public class UserService implements IUserService {
 		return userdao.findall();
 	}
 
+	@Override
+	public User getByName(String name) {
+		
+		return userdao.getByName(name);
+	}
+
 }

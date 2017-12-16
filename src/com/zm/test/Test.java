@@ -42,7 +42,7 @@ public class Test {
 		Transaction tx = session.beginTransaction();
 		// 测试数据库
 		User u= new User();
-		u.setName("张三");
+		u.setUsername("张三");
 		u.setPassword("804998");
 		session.save(u);
 		tx.commit();

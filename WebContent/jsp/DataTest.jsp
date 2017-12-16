@@ -30,7 +30,7 @@
 	<p>
 		basePath的值是：<span><%=basePath%></span>
 	</p>
-	</br>
+	<br/>
 	<p>
 		<%-- request.getContextPath()的值是：<span><%=path%></span> --%>
 	</p>

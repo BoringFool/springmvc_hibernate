@@ -26,7 +26,7 @@ public class tet {
 		@Test
 		public void testact() {
 			User u = new User();
-			u.setName("уе2");
+			u.setUsername("уе2");
 			u.setPassword("123456");
 			userService.act(u);
 			System.out.println(1);

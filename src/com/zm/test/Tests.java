@@ -18,7 +18,7 @@ public class Tests {
 	public void testact() {
 		ApplicationContext ctx =new ClassPathXmlApplicationContext("beans.xml");
 		IConpanyService conpanyservice=(IConpanyService) ctx.getBean("conpanyservice");
-		IUserService userservice= (IUserService) ctx.getBean("userservice");
+		//IUserService userservice= (IUserService) ctx.getBean("userservice");
 		/*Conpany c=new Conpany();
 		c=conpanyservice.look(2l);
 		c.setOffer("haha");
