@@ -65,11 +65,11 @@ $().ready(function() {
 			dataTape : "json",
 			success : function(data) {
 				if (data == 1) {
-					alert("注册成功,3秒后跳转");
+					alert("注册成功,5秒后跳转");
 					change();
 					setTimeout(function (){
 						$(location).attr("href","http://localhost:8080/springmvc_hibernate/index.jsp");
-					}, 3000);
+					}, 5000);
 
 				} else {
 					alert("用户已经存在");
