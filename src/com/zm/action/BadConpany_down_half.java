@@ -46,13 +46,13 @@ public class BadConpany_down_half {
 		List<User> userList = new ArrayList<User>();
 		User user1 = new User();
 		user1.setEmail("23213212@qq.com");
-		user1.setId(11);
+		user1.setId(11l);
 		user1.setUsername("sam");
 		user1.setPassword("123321");
 
 		User user2 = new User();
 		user2.setEmail("46432322@qq.com");
-		user2.setId(22);
+		user2.setId(22l);
 		user2.setUsername("john");
 		user2.setPassword("1234533");
 		userList.add(user1);
