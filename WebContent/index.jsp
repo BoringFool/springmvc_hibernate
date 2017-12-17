@@ -19,6 +19,6 @@
 	<a href="http://localhost:8080/springmvc_hibernate/jsp/BadConpany.jsp">公司页面</a>
 	<a href="http://localhost:8080/springmvc_hibernate/jsp/logo.jsp">登陆页面</a>	
 	<button id="logoout" type="button">退出登陆</button>
-	<button id="check" type="button">查看session</button>
+	
 </body>
 </html>

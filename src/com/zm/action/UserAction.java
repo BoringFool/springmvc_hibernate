@@ -42,7 +42,6 @@ public class UserAction {
 	 * */
 	@RequestMapping("/register")
 	public @ResponseBody Long r1egister(@RequestBody User u) {
-		System.out.println(u.getEmail()+u.getPassword()+u.getUsername());
 		User user=userservice.getByName(u.getUsername());
 		if(user==null) {
 			userservice.act(u);

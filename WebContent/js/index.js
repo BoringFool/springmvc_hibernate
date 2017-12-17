@@ -5,20 +5,22 @@ $().ready(function() {
 	check();
 	
 	/*
+	 * 退出登陆状态
 	 * */
 	$("#logoout").click(function() {
 		logoout();
 	});
 	
 	/*
-	 * 
+	 *退出登陆状态 
 	 * */
 	function logoout(){
 		$.ajax({
 			type:"post",
 			url : "/springmvc_hibernate/logo/out",
 			success:function(){ 
-				alert(1);
+				alert("已退出");
+				$(location).attr("href","/springmvc_hibernate/jsp/logo.jsp");
 			},
 			error:function(){
 				alert("请求失败");
@@ -39,6 +41,7 @@ $().ready(function() {
 				if(a==data){
 					alert("已经登陆！");
 				}else{
+					alert("未登陆");
 					$(location).attr("href","/springmvc_hibernate/jsp/logo.jsp");
 				}
 			},
