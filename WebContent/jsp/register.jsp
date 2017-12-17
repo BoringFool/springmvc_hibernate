@@ -6,17 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/register.js"></script>
 <link href="../css/register.css" rel="stylesheet" type="text/css" />
 <script>
 	$().ready(function() {
-		$(document).ready(function() {
-			$("input").click(function() {
-				$(this).hide();
-			});
-		});
-		$("p").click(function() {
-			$(this).hide();
-		});
+		
 		/* $("#a").click(function(){
 			$(this).hide();
 		}); */
@@ -53,7 +47,7 @@
 				<label for="password">密码</label> <input id="password"
 					type="password">
 				<p>密码必须包含字母和数字。</p>
-				<input class="inp_s_s" type="submit" value="注册">
+				<input id="submit" class="inp_s_s" type="submit" value="注册">
 			</div>
 		</form>
 		<div class="th_d">

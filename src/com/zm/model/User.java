@@ -2,6 +2,8 @@ package com.zm.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.springframework.stereotype.Component;
@@ -10,8 +12,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class User {
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", unique = false, nullable = false)
-	private int id;
+	private Long id;
 	private String username;
 	private String password;
 	private String email;
@@ -24,11 +27,11 @@ public class User {
 		this.email = email;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
