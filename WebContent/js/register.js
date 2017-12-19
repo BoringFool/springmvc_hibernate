@@ -68,7 +68,7 @@ $().ready(function() {
 					alert("注册成功,5秒后跳转");
 					change();
 					setTimeout(function (){
-						$(location).attr("href","http://localhost:8080/springmvc_hibernate/index.jsp");
+						$(location).attr("href","http://localhost:8080/springmvc_hibernate/jsp/logo.jsp");
 					}, 5000);
 
 				} else {

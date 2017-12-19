@@ -39,7 +39,7 @@ $().ready(function() {
 			success:function(data){ 
 				var a="ok";
 				if(a==data){
-					alert("已经登陆！");
+					
 				}else{
 					alert("未登陆");
 					$(location).attr("href","/springmvc_hibernate/jsp/logo.jsp");
