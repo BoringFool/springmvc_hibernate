@@ -43,5 +43,13 @@
 		<filter-name>characterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	<filter>
+		<filter-name>FilterTest</filter-name>
+		<filter-class>com.zm.filter.FilterTest</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterTest</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
 </web-app>
