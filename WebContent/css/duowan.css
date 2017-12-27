@@ -2,25 +2,34 @@ body {
 	margin: 0px;
 }
 
+font {
+	font-family: Helvetica;
+}
+
+a {
+	text-decoration: none;
+}
+
+.a_sp {
+	color: #A6AAB3;
+}
+
 .main {
 	height: 90px;
 	width: 100%;
 	background-color: #1E2023;
-	border: 1px solid red;
 }
 
 .scd_d {
 	width: 1200px;
 	margin: 0px auto;
 	overflow: hidden;
-	border: 1px solid #13ff13;
 }
 
 .thd_d {
-	width: 500px;
+	width: 400px;
 	height: 90px;
 	float: left;
-	border: 1px solid blue;
 }
 
 .img1 {
@@ -29,18 +38,17 @@ body {
 }
 
 .fou_d {
-	width: 500px;
-	height: 90px;
+	width: 400px;
+	height: 78px;
 	float: left;
-	border: 1px solid blue;
+	padding-top: 12px;
+	padding-top: 12px;
 }
 
 .fiv_d {
-	width: 150px;
+	width: 390px;
 	height: 90px;
 	float: left;
-	margin-top: 0px;
-	border: 1px solid blue;
 }
 
 .test {
@@ -50,4 +58,91 @@ body {
 	width: 100%;
 	height: 30px;
 	display: block;
+}
+
+.f_c,.s_c,.t_c,.serc_sub {
+	background-image: url("../images/alllittle_coin.png");
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	margin: 0px auto;
+}
+
+.f_c {
+	background-position: -1902px -930px;
+}
+
+.s_c {
+	background-position: -1902px -963px;
+}
+
+.t_c {
+	background-position: -1902px -996px;
+}
+
+.f_ul {
+	list-style: none;
+}
+
+.f_ul li,.fiv_d_s {
+	font-size: 14px;
+	font-weight: 700;
+	float: left;
+	color: #A6AAB3;
+}
+
+.f_ul li {
+	margin: 0px 25px;
+}
+
+.f_sp {
+	font-weight: 700;
+	margin-top: 2px;
+}
+
+.f_form,.input_f,.serc_sub {
+	background-color: #55585D;
+	border: 1px solid #55585D;
+}
+
+.f_form {
+	width: 145px;
+	height: 16px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+	border-bottom-left-radius: 14px;
+	padding: 5px 20px;
+	margin-top: 28px;
+}
+
+.input_f {
+	width: 119px;
+	height: 16px;
+	color: #808288;
+	float: left;
+}
+
+.serc_sub {
+	margin-left: 0px;
+	width: 24px;
+	height: 20px;
+	background-position: -1903px -1033px;
+}
+
+.fiv_d_f {
+	width: 114px;
+	height: 28px;
+	float: left;
+	margin-top: 28px;
+}
+
+.fiv_d_s {
+	width: 64px;
+	height: 18px;
+	float: left;
+	margin-top: 28px;
+	font-weight: 500;
+	padding: 5px 10px;
 }
