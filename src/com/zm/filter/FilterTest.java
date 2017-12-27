@@ -19,6 +19,9 @@ public class FilterTest implements Filter {
 
 	}
 
+	/*
+	 * 如果是拦截所有请求，需要用转发，用重定向会导致无限拦截，从而无法跳转
+	 * */
 	@Override
 	public void doFilter(ServletRequest arg0, ServletResponse arg1,
 			FilterChain arg2) throws IOException, ServletException {
@@ -30,7 +33,7 @@ public class FilterTest implements Filter {
 			chan.doFilter(req, res);	
 		}else{
 			System.out.println("未登录！");
-			req.getRequestDispatcher("/jsp/filtertest.jsp").forward(req, res);
+			req.getRequestDispatcher("/jsp/logo.jsp").forward(req, res);
 			//res.sendRedirect("/springmvc_hibernate/jsp/filtertest.jsp");
 			
 		}

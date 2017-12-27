@@ -10,17 +10,18 @@
 </head>
 <body>
 <div class="main">
-	<div class="scd_d">
-		<div class="thd_d">
-			<img class="img1" alt="" src="../images/Duowan_logo.png">
-		</div>
-		<div class="fou_d">
-						
-		</div>
-		<dir class="fiv_d">
-			
-		</dir>
-	</div>
+    <div class="scd_d">
+        <div class="thd_d">
+            <img class="img1" alt="" src="../images/Duowan_logo.png">
+            <img style="text-align: center;margin-left: 10px;margin-top: 30px" src="../images/logo2.png" />
+        </div>
+        <div class="fou_d">
+
+        </div>
+        <div class="fiv_d">
+
+        </div>
+    </div>
 </div>
 
 <!-- i需要display：block，否则不显示图片 -->

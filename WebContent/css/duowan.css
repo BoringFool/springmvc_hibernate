@@ -12,11 +12,12 @@ body {
 .scd_d {
 	width: 1200px;
 	margin: 0px auto;
-	border: 1px solid white;
+	overflow: hidden;
+	border: 1px solid #13ff13;
 }
 
 .thd_d {
-	width: 600px;
+	width: 500px;
 	height: 90px;
 	float: left;
 	border: 1px solid blue;
@@ -28,7 +29,7 @@ body {
 }
 
 .fou_d {
-	width: 400px;
+	width: 500px;
 	height: 90px;
 	float: left;
 	border: 1px solid blue;
