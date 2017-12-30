@@ -6,39 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="../css/navigation.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/navigtion.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
-	<script>
-		$().ready(function() {
-			function c(id, id1) {
-				$("#" + id).hide();
-				$("#" + id1).hover(function() {
-					$("#" + id1).css({"border":"1px solid #D5D5D5","border-bottom":"none"});
-					$("#" + id).show();
-				}, function() {
-					$("#" + id).hide();
-					$("#" + id1).css({"border":"none","border-bottom":"none"});
-				});
-				$("#" + id).hover(function(){
-					$("#" + id1).css({"border":"1px solid #D5D5D5","border-bottom":"none"});
-					$("#" + id).show();
-				},function(){
-					$("#" + id).hide();
-					$("#" + id1).css({"border":"none","border-bottom":"none"});
-				});
-			}
 
-			for (var i = 1; i <= 11; i++) {
-				var n = "a";
-				var m = n + i + "";
-				var z = "li_a";
-				var x = z + i + "";
-				c(m, x);
-			}
-			;
-		});
-	</script>
 	<div class="main">
 		<ul class="f_ul">
 			<li class="li_menu">热门专区</li>

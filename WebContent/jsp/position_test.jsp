@@ -24,7 +24,7 @@
 		</div>
 	</div> -->
 
-	<div style="padding-left: 0px;border: 1px solid red;width: 88px;">
+	<div style="">
 		<a href="#">新闻中心</a>
 		<ul class="inner_ul" style="">
 			<li style="text-align: center;">新闻中心</li>
