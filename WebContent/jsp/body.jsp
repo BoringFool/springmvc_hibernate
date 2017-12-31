@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/body.css">
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/body.js"></script>
+<title>Insert title here</title>
+<script>
+	
+<%String basePath = request.getContextPath();%>
+	if (typeof jQuery == 'undefined') {
+		window.alert("没有jquery");
+	}
+</script>
+</head>
+<body>
+	<div class="main">
+		<div class="sc_d_f">
+			<img alt="" src="../images/ad01.png" class="img_f"> 
+			<img alt="" src="../images/near_ad.jpg" class="img_s">
+		</div>
+		<div>
+			<div class="sc_d">
+				<div class="sc_d_s">
+					<!-- 图 -->
+					<div>
+						<ul style="">
+							<li><img class="cir_li" alt="" src="../images/cir_1.jpg"></li>
+							<li><img class="cir_li" alt="" src="../images/cir_2.jpg"></li>
+							<li><img class="cir_li" alt="" src="../images/cir_3.jpg"></li>
+							<li><img class="cir_li" alt="" src="../images/cir_4.jpg"></li>
+							<li><img class="cir_li" alt="" src="../images/cir_5.jpg"></li>
+							<li><img class="cir_li" alt="" src="../images/cir_6.jpg"></li>
+						</ul>
+					</div>
+					<!-- 图边 -->
+					<div>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="th_d"></div>
+			<div style="width: 3.57912e+0.7px;height: 20px;border: 1ps solid black;"></div>
+		</div>
+	</div>
+</body>
+</html>

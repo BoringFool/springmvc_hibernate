@@ -13,6 +13,7 @@
 
 	<div class="main">
 		<ul class="f_ul">
+			<!-- 可以改成动态获取添加内容 -->
 			<li class="li_menu">热门专区</li>
 			<li class="f_ul_li"><a href="#" class="ul_li_a" id="li_a1">新闻中心</a>
 				<div class="ul_d" id="a1">
@@ -116,6 +117,7 @@
 		</ul>
 		<div class="sc_d">
 			<ul>
+			<!-- 可以改成动态获取添加内容 -->
 				<li class="s_li">英雄联盟</li>
 				<li class="s_li">地下城与勇士</li>
 				<li class="s_li">龙之谷</li>
@@ -133,6 +135,7 @@
 				<li class="s_li"></li>
 			</ul>
 			<ul>
+			<!-- 可以改成动态获取添加内容 -->
 				<li class="s_li">王者荣耀</li>
 				<li class="s_li">炉石传说</li>
 				<li class="s_li">我的世界</li>

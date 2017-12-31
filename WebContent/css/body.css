@@ -1,0 +1,50 @@
+body {
+	margin: 0px;
+}
+ul{
+	list-style:none;
+}
+
+.main {
+	width: 1200px;
+	overflow: hidden; 
+	margin: 0 auto;
+	
+	border: 1px solid red;
+}
+
+.sc_d {
+	width: 892px;
+	height: 550px;
+	border: 1px solid red;
+	float: left;
+}
+
+.th_d {
+	width: 304px;
+	height: 550px;
+	float: left;
+	border: 1px solid blue;
+}
+.sc_d_f{
+	margin-bottom:30px; 
+}
+.img_f {
+	width: 880px;
+	height: 85px;
+}
+.img_s{
+	margin-left:20px;
+	margin-right:0px;
+	width: 290px;
+	height: 85px;
+}
+.sc_d_s{
+	width: 430px;
+	height: 258px;
+	border: 1px solid blue;
+}
+.cir_li{
+	
+	float: left;
+}

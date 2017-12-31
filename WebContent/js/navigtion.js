@@ -1,4 +1,8 @@
 		$().ready(function() {
+			/*
+			 * 显示和隐藏div
+			 * 
+			 * */
 			function c(id, id1) {
 				$("#" + id).hide();
 				$("#" + id1).hover(function() {
@@ -16,13 +20,13 @@
 					$("#" + id1).css({"border":"none","border-bottom":"none"});
 				});
 			}
-
+			/*
+			 * 循环绑定触发事件
+			 * */
 			for (var i = 1; i <= 11; i++) {
-				var n = "a";
-				var m = n + i + "";
-				var z = "li_a";
-				var x = z + i + "";
-				c(m, x);
+				var n = "a"+ i;
+				var z = "li_a"+ i;
+				c(n, z);
 			}
 			;
 		});
