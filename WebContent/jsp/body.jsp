@@ -26,30 +26,36 @@
 			<div class="sc_d">
 				<div class="sc_d_s">
 					<!-- 图 -->
-					<div>
-						<ul style="">
-							<li><img class="cir_li" alt="" src="../images/cir_1.jpg"></li>
-							<li><img class="cir_li" alt="" src="../images/cir_2.jpg"></li>
-							<li><img class="cir_li" alt="" src="../images/cir_3.jpg"></li>
-							<li><img class="cir_li" alt="" src="../images/cir_4.jpg"></li>
-							<li><img class="cir_li" alt="" src="../images/cir_5.jpg"></li>
-							<li><img class="cir_li" alt="" src="../images/cir_6.jpg"></li>
+					<div class="t">
+						<ul  class="sc_ul">
+							<li class="cir_li" value="1"><img class="cir_li" alt="" src="../images/cir_1.jpg"></li>
+							<li class="cir_li" value="2"><img alt="" src="../images/cir_2.jpg"></li>
+							<li class="cir_li" value="3"><img alt="" src="../images/cir_3.jpg"></li>
+							<li class="cir_li" value="4"><img alt="" src="../images/cir_4.jpg"></li>
+							<li class="cir_li" value="5"><img alt="" src="../images/cir_5.jpg"></li>
+							<li class="cir_li" value="6"><img alt="" src="../images/cir_6.jpg"></li>
 						</ul>
+					<div class="d_triangle">
+						<i class="triangle"></i>
 					</div>
-					<!-- 图边 -->
-					<div>
+						<!-- 图边 -->
+					<div class="sc_d_s_s">
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li class="cir_d" value="1">影视</li>
+							<li class="cir_d" value="2">行业</li>
+							<li class="cir_d" value="3">主机</li>
+							<li class="cir_d" value="4">GIF</li>
+							<li class="cir_d" value="5">网页</li>
+							<li class="cir_d" value="6">手游</li>
 						</ul>
 					</div>
+					</div>
+					
 				</div>
 			</div>
-			<div class="th_d"></div>
+			<div class="th_d">
+				
+			</div>
 			<div style="width: 3.57912e+0.7px;height: 20px;border: 1ps solid black;"></div>
 		</div>
 	</div>
