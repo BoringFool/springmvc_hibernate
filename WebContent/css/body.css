@@ -84,7 +84,7 @@ ul {
 	display: block;
 	background-color: black;
 	position: relative;
-	left: -0px;/*364µÝ¼õ*/
+	left: 0px;/*364µÝ¼õ*/
 }
 
 .sc_d_s_s {
@@ -115,4 +115,5 @@ ul {
 .add_class {
 	background-color: #E94646;
 	border-color: #E94646;
+	color: #FFFFFF;
 }
