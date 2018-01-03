@@ -28,7 +28,7 @@
 					<!-- 图 -->
 					<div class="t">
 						<ul  class="sc_ul">
-							<li class="cir_li" value="1"><img class="cir_li" alt="" src="../images/cir_1.jpg"></li>
+							<li class="cir_li" value="1"><img alt="" src="../images/cir_1.jpg"></li>
 							<li class="cir_li" value="2"><img alt="" src="../images/cir_2.jpg"></li>
 							<li class="cir_li" value="3"><img alt="" src="../images/cir_3.jpg"></li>
 							<li class="cir_li" value="4"><img alt="" src="../images/cir_4.jpg"></li>
