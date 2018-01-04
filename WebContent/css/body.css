@@ -21,7 +21,8 @@ ul {
 .sc_d {
 	width: 892px;
 	height: 550px;
-	border: 1px solid red;
+	position: relative;
+	border: 1px solid black;
 	float: left;
 }
 
@@ -50,10 +51,10 @@ ul {
 
 .sc_d_s {
 	width: 430px;
-	height: 258px;
+	height: 550px;
 	padding: 0px;
 	position: relative;
-	border: 1px solid blue;
+	border: 1px solid yellow;
 	overflow: hidden;
 }
 
@@ -66,6 +67,7 @@ ul {
 }
 
 .cir_li {
+	height:258px;
 	float: left;
 }
 
@@ -84,7 +86,7 @@ ul {
 	display: block;
 	background-color: black;
 	position: relative;
-	left: 0px;/*364µÝ¼õ*/
+	left: 0px; /*364µÝ¼õ*/
 }
 
 .sc_d_s_s {
@@ -116,4 +118,18 @@ ul {
 	background-color: #E94646;
 	border-color: #E94646;
 	color: #FFFFFF;
+}
+
+.sc_d_t,.sc_d_fo{
+	width: 428px;
+	margin-top: 28px;
+}
+.sc_d_t {
+	
+	height: 132px;
+	border: 1px solid red;
+}
+.sc_d_fo {
+	height: 96px;
+	border: 1px solid blue;
 }
