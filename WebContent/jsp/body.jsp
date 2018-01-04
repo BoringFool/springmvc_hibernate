@@ -41,7 +41,7 @@
 						<!-- 图边 -->
 					<div class="sc_d_s_s">
 						<ul>
-							<li class="cir_d" value="1">影视</li>
+							<li class="cir_d add_class" value="1">影视</li>
 							<li class="cir_d" value="2">行业</li>
 							<li class="cir_d" value="3">主机</li>
 							<li class="cir_d" value="4">GIF</li>
