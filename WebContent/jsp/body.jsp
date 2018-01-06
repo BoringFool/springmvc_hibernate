@@ -22,7 +22,7 @@
 			<img alt="" src="../images/ad01.png" class="img_f"> <img alt=""
 				src="../images/near_ad.jpg" class="img_s">
 		</div>
-		<div>
+		
 			<div class="sc_d">
 				<div class="sc_d_s">
 					<!-- 图 -->
@@ -58,15 +58,74 @@
 					</div>
 
 					<!--  -->
-					<div class="sc_d_t">a</div>
+					<div class="sc_d_t">
+						<div class="new">
+							<div class="new_title_l">
+								<h2>新游有料</h2>
+								<div class="title_p">实时更新最新游戏爆料情报</div>
+							</div>
+							<div class="new_title_r">
+								<a href="#" class="title_m">更多<i class="title_c"></i></a>
+							</div>
+						</div>
+						
+						<div>
+							<ul class="new_m_ul">
+								<li>
+								<img alt="" src="../images/news_1.jpg">
+								<div class="new_ul_li">
+									<h3>绝地求生</h3>
+									<p class="li_p">雨天雾天重新来    雪天将至</p>
+								</div>
+								</li>
+								<li style="margin-left: 22px">
+								<img alt="" src="../images/news_2.jpg">
+								<div class="new_ul_li">
+									<h3>剑网3重制版</h3>
+									<p class="li_p">官方动画曝光</p>
+								</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<!--  -->
-					<div class="sc_d_fo">b</div>
+					<div class="sc_d_fo">
+						<div class="ad_new">
+							<h2>厂商消息</h2>
+						</div>
+						<div class="ad_ul">
+						<ul>
+							<li>
+								<div class="ad_title">
+									<h3>热点聚焦</h3>
+								</div>
+								<div class="ad_p">
+									<p class="f_bold">天美研发《绝地求生 全军出击》先锋首测将开</p>
+								</div>
+							</li>
+							<li>
+								<div class="ad_title">
+									<h3>厂商快讯</h3>
+								</div>
+								<div class="ad_p">
+									<p>1.4LOL青岛站开赛    《问道》手游飞升CG首曝</p>
+									<p>蜀门手游2018年新春版    仙侠世界2悬赏玩法曝光</p>
+									<p>远征今日新服首杀开启    37太极崛起今日公测开启</p>
+								</div>
+							</li>
+						</ul>
+						</div>
+					</div>
 				</div>
 
 			</div>
-			<div class="th_d"></div>
+			<div class="th_d">
+				<div>
+					
+				</div>
+			</div>
 
-		</div>
+		
 	</div>
 </body>
 </html>

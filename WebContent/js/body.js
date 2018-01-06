@@ -44,7 +44,7 @@ $().ready(function() {
 		/* 画面切换速度 */
 		var timer = setInterval(function() {
 			cir(t, arg, arg_1);
-		}, 75);
+		}, 80);
 
 		/* 需要被执行4次 */
 		function cir(arg_1, arg_2, arg_3) {
