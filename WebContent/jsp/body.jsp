@@ -117,7 +117,45 @@
 						</div>
 					</div>
 				</div>
-
+			
+			<div>
+			<!-- title -->
+				<div>
+					<ul>
+						<li><h2>今日头条</h2></li>
+						<li><h2>要闻回顾</h2></li>
+						<li><h2>新闻中心</h2></li>
+					</ul>
+				</div>
+				<!-- content -->
+				<div>
+				<!-- ad -->
+					<div>
+						<h1></h1>
+						<p></p>
+						<h1></h1>
+						<p></p>
+					</div>
+					<!-- news -->
+					<div>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<!-- space -->
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			</div>
 			<div class="th_d">
 				<div>

@@ -5,7 +5,7 @@ $().ready(function() {
 		t = setTimeout(function() {
 			// 要执行的操作；鼠标放上去后200毫秒才执行
 			hov($this);
-		}, 200);
+		}, 250);
 	}, function() {
 		// 鼠标移除后清除上面的操作；
 		clearTimeout(t);
@@ -44,11 +44,11 @@ $().ready(function() {
 		/* 画面切换速度 */
 		var timer = setInterval(function() {
 			cir(t, arg, arg_1);
-		}, 80);
+		}, 40);
 
 		/* 需要被执行4次 */
 		function cir(arg_1, arg_2, arg_3) {
-			var itl = -91 * arg_3;/* 每次增减距离 */
+			var itl = -91*arg_3;/* 每次增减距离 */
 			/* 大减，小加？ */
 			var p = $(".sc_ul").css("left");
 			var current = parseInt(p.substring(0, p.length - 2));
