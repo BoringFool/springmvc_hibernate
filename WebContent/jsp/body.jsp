@@ -118,40 +118,77 @@
 					</div>
 				</div>
 			
-			<div>
+			<div class="sc_d_fi">
 			<!-- title -->
-				<div>
+				<div class="content_head">
 					<ul>
-						<li><h2>今日头条</h2></li>
-						<li><h2>要闻回顾</h2></li>
-						<li><h2>新闻中心</h2></li>
+						<li><h4>今日头条</h4></li>
+						<li><h4>要闻回顾</h4></li>
+						<li><h4>新闻中心</h4></li>
 					</ul>
 				</div>
 				<!-- content -->
-				<div>
+				<div id="content01" class="content_p1" style="display: none;">
 				<!-- ad -->
-					<div>
-						<h1></h1>
-						<p></p>
-						<h1></h1>
-						<p></p>
+					<div class="ad_com">
+						<h2>你能像他们这样  爱游戏到百年归老？</h2>
+						<p>[ 《枪火游侠》大逃杀模式 ][ 多玩游戏网招聘：编辑实习生 ]</p>
+						<h2>揭秘《魔域》狗粮事件  新游TOP榜</h2>
+						<p>[ 魔域耀世战犬新手成长礼包 ][ 海外TOP榜 ]</p>
 					</div>
 					<!-- news -->
-					<div>
+					<div class="news_p">
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li><p>《堡垒之夜》中文版向所有玩家免费开测 QQ号可直接登录游戏</p></li>
+							<li><p>《风暴英雄》新版战场和英雄多项改动 新英雄火蝠布雷泽登场</p></li>
+							<li><p>区块链游戏助股价异常飞涨 上市公司害怕成炒作对象急忙澄清</p></li>
+							<li><p>EA申请“沉迷优化匹配”专利 新匹配机制恐让玩家更沉迷氪金</p></li>
+							<li><p>续作《OPUS：灵魂之桥》上线Steam 二月发布将支持简体中文</p></li>
+							<li><p>突破次元 “新”《御剑情缘》代言人周冬雨新装亮相</p></li>
 							<!-- space -->
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li class="extra"><p>绝地求生国服专属服饰曝光：中国龙和脸谱等元素格外惹眼</p></li>
+							<li><p>《怪物猎人：世界》将于下周迎来第三次测试 灭尽龙狩猎演示</p></li>
+							<li><p>迷宫探索RPG游戏《命运之手2》 PS4平台简体中文版已经上市</p></li>
+							<li><p>开放世界RPG《在远方：追云者编年史》曝PS4简中版发售日期</p></li>
+							<li><p>EA Sports格斗大作《UFC 3》全新预告片 生涯模式首次曝光</p></li>
+							<li><p>刘亦菲发布“天使密语”《天使纪元》明日燃情公测</p></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<!-- content 2-->
+				<div id="content02" class="content_p1" style="display: block;">
+				<!-- ad -->
+					<div class="ad_com" >
+						<h2>歪评 ：到了年底游戏公司都开始捞起外快</h2>
+						<div class="out_im">
+						<div class="img_01">
+							<img alt="" src="../images/content_01.jpg">
+							<p>网易游戏热爱者年度盛典</p>
+						</div>
+						<div class="img_01">
+							<img alt="" src="../images/content_02.jpg">
+							<p>网易游戏热爱者年度盛典</p>
+						</div>
+						</div>
+					</div>
+					<!-- news -->
+					<div class="news_p">
+						<ul class="ex">
+							<li><p>《堡垒之夜》中文版向所有玩家免费开测 QQ号可直接登录游戏</p></li>
+							<li><p>《风暴英雄》新版战场和英雄多项改动 新英雄火蝠布雷泽登场</p></li>
+							<li><p>区块链游戏助股价异常飞涨 上市公司害怕成炒作对象急忙澄清</p></li>
+							<li><p>EA申请“沉迷优化匹配”专利 新匹配机制恐让玩家更沉迷氪金</p></li>
+							<li><p>续作《OPUS：灵魂之桥》上线Steam 二月发布将支持简体中文</p></li>
+							<li><p>突破次元 “新”《御剑情缘》代言人周冬雨新装亮相</p></li>
+							<!-- space -->
+							<li><p>绝地求生国服专属服饰曝光：中国龙和脸谱等元素格外惹眼</p></li>
+							<li><p>《怪物猎人：世界》将于下周迎来第三次测试 灭尽龙狩猎演示</p></li>
+							<li><p>迷宫探索RPG游戏《命运之手2》 PS4平台简体中文版已经上市</p></li>
+							<li><p>开放世界RPG《在远方：追云者编年史》曝PS4简中版发售日期</p></li>
+							<li><p>EA Sports格斗大作《UFC 3》全新预告片 生涯模式首次曝光</p></li>
+							<li><p>刘亦菲发布“天使密语”《天使纪元》明日燃情公测</p></li>
 						</ul>
 					</div>
 				</div>

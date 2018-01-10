@@ -5,7 +5,7 @@ $().ready(function() {
 		t = setTimeout(function() {
 			// 要执行的操作；鼠标放上去后200毫秒才执行
 			hov($this);
-		}, 250);
+		}, 140);
 	}, function() {
 		// 鼠标移除后清除上面的操作；
 		clearTimeout(t);
