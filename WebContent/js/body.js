@@ -20,7 +20,7 @@ $().ready(function() {
 		var c = a - 1;
 		var target = -(c * 364);
 		times(c, target);
-	}
+	};
 
 	/* 计算需要切换几张图,D_value相当于执行次数 */
 	function times(arg, arg_1) {
@@ -34,9 +34,8 @@ $().ready(function() {
 			cc(arg_1, D_value);
 		} else if (D_value <= 0) {
 			cc(arg_1, -(D_value));
-		}
-		;
-	}
+		};
+	};
 
 	/* 渐换，执行一次等于切换一张图 */
 	function cc(arg, arg_1) {
@@ -64,14 +63,30 @@ $().ready(function() {
 			/* 判断是否停止 */
 			if (t >= 4) {
 				clearInterval(timer);
-			}
-			;
-
-		}
-		;
+			};
+		};
+	};
+	
+	
+	/**/
+	function hov_2(arg){
+		$(".is_active").removeClass("is_active");
+		arg.addClass("is_active");
 	}
-	;
-
+	
+	$(".nm").hover(function(){
+		var $this=$(this);
+		hov_2($this);
+	});
+	/**/
+	/**/
+	/**/
+	/**/	
+	
+	
+	
+	
+	
 	/* 小三角切换 */
 	function distance(arg) {
 		var a = (arg - 1) * 43;

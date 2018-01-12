@@ -22,78 +22,75 @@
 			<img alt="" src="../images/ad01.png" class="img_f"> <img alt=""
 				src="../images/near_ad.jpg" class="img_s">
 		</div>
-		
-			<div class="sc_d">
-				<div class="sc_d_s">
-					<!-- 图 -->
-					<div class="t">
-						<ul class="sc_ul">
-							<li class="cir_li" value="1"><img alt=""
-								src="../images/cir_1.jpg"></li>
-							<li class="cir_li" value="2"><img alt=""
-								src="../images/cir_2.jpg"></li>
-							<li class="cir_li" value="3"><img alt=""
-								src="../images/cir_3.jpg"></li>
-							<li class="cir_li" value="4"><img alt=""
-								src="../images/cir_4.jpg"></li>
-							<li class="cir_li" value="5"><img alt=""
-								src="../images/cir_5.jpg"></li>
-							<li class="cir_li" value="6"><img alt=""
-								src="../images/cir_6.jpg"></li>
+
+		<div class="sc_d">
+			<div class="sc_d_s">
+				<!-- 图 -->
+				<div class="t">
+					<ul class="sc_ul">
+						<li class="cir_li" value="1"><img alt=""
+							src="../images/cir_1.jpg"></li>
+						<li class="cir_li" value="2"><img alt=""
+							src="../images/cir_2.jpg"></li>
+						<li class="cir_li" value="3"><img alt=""
+							src="../images/cir_3.jpg"></li>
+						<li class="cir_li" value="4"><img alt=""
+							src="../images/cir_4.jpg"></li>
+						<li class="cir_li" value="5"><img alt=""
+							src="../images/cir_5.jpg"></li>
+						<li class="cir_li" value="6"><img alt=""
+							src="../images/cir_6.jpg"></li>
+					</ul>
+					<div class="d_triangle">
+						<i class="triangle"></i>
+					</div>
+					<!-- 图边 -->
+					<div class="sc_d_s_s">
+						<ul>
+							<li class="cir_d add_class" value="1">影视</li>
+							<li class="cir_d" value="2">行业</li>
+							<li class="cir_d" value="3">主机</li>
+							<li class="cir_d" value="4">GIF</li>
+							<li class="cir_d" value="5">网页</li>
+							<li class="cir_d" value="6">手游</li>
 						</ul>
-						<div class="d_triangle">
-							<i class="triangle"></i>
+					</div>
+				</div>
+
+				<!--  -->
+				<div class="sc_d_t">
+					<div class="new">
+						<div class="new_title_l">
+							<h2>新游有料</h2>
+							<div class="title_p">实时更新最新游戏爆料情报</div>
 						</div>
-						<!-- 图边 -->
-						<div class="sc_d_s_s">
-							<ul>
-								<li class="cir_d add_class" value="1">影视</li>
-								<li class="cir_d" value="2">行业</li>
-								<li class="cir_d" value="3">主机</li>
-								<li class="cir_d" value="4">GIF</li>
-								<li class="cir_d" value="5">网页</li>
-								<li class="cir_d" value="6">手游</li>
-							</ul>
+						<div class="new_title_r">
+							<a href="#" class="title_m">更多<i class="title_c"></i></a>
 						</div>
 					</div>
 
-					<!--  -->
-					<div class="sc_d_t">
-						<div class="new">
-							<div class="new_title_l">
-								<h2>新游有料</h2>
-								<div class="title_p">实时更新最新游戏爆料情报</div>
-							</div>
-							<div class="new_title_r">
-								<a href="#" class="title_m">更多<i class="title_c"></i></a>
-							</div>
-						</div>
-						
-						<div>
-							<ul class="new_m_ul">
-								<li>
-								<img alt="" src="../images/news_1.jpg">
+					<div>
+						<ul class="new_m_ul">
+							<li><img alt="" src="../images/news_1.jpg">
 								<div class="new_ul_li">
 									<h3>绝地求生</h3>
-									<p class="li_p">雨天雾天重新来    雪天将至</p>
-								</div>
-								</li>
-								<li style="margin-left: 22px">
-								<img alt="" src="../images/news_2.jpg">
+									<p class="li_p">雨天雾天重新来 雪天将至</p>
+								</div></li>
+							<li style="margin-left: 22px"><img alt=""
+								src="../images/news_2.jpg">
 								<div class="new_ul_li">
 									<h3>剑网3重制版</h3>
 									<p class="li_p">官方动画曝光</p>
-								</div>
-								</li>
-							</ul>
-						</div>
+								</div></li>
+						</ul>
 					</div>
-					<!--  -->
-					<div class="sc_d_fo">
-						<div class="ad_new">
-							<h2>厂商消息</h2>
-						</div>
-						<div class="ad_ul">
+				</div>
+				<!--  -->
+				<div class="sc_d_fo">
+					<div class="ad_new">
+						<h2>厂商消息</h2>
+					</div>
+					<div class="ad_ul">
 						<ul>
 							<li>
 								<div class="ad_title">
@@ -108,18 +105,18 @@
 									<h3>厂商快讯</h3>
 								</div>
 								<div class="ad_p">
-									<p>1.4LOL青岛站开赛    《问道》手游飞升CG首曝</p>
-									<p>蜀门手游2018年新春版    仙侠世界2悬赏玩法曝光</p>
-									<p>远征今日新服首杀开启    37太极崛起今日公测开启</p>
+									<p>1.4LOL青岛站开赛 《问道》手游飞升CG首曝</p>
+									<p>蜀门手游2018年新春版 仙侠世界2悬赏玩法曝光</p>
+									<p>远征今日新服首杀开启 37太极崛起今日公测开启</p>
 								</div>
 							</li>
 						</ul>
-						</div>
 					</div>
 				</div>
-			
+			</div>
+
 			<div class="sc_d_fi">
-			<!-- title -->
+				<!-- title -->
 				<div class="content_head">
 					<ul>
 						<li><h4>今日头条</h4></li>
@@ -129,11 +126,11 @@
 				</div>
 				<!-- content -->
 				<div id="content01" class="content_p1" style="display: none;">
-				<!-- ad -->
+					<!-- ad -->
 					<div class="ad_com">
-						<h2>你能像他们这样  爱游戏到百年归老？</h2>
+						<h2>你能像他们这样 爱游戏到百年归老？</h2>
 						<p>[ 《枪火游侠》大逃杀模式 ][ 多玩游戏网招聘：编辑实习生 ]</p>
-						<h2>揭秘《魔域》狗粮事件  新游TOP榜</h2>
+						<h2>揭秘《魔域》狗粮事件 新游TOP榜</h2>
 						<p>[ 魔域耀世战犬新手成长礼包 ][ 海外TOP榜 ]</p>
 					</div>
 					<!-- news -->
@@ -155,22 +152,22 @@
 						</ul>
 					</div>
 				</div>
-				
-				
+
+
 				<!-- content 2-->
 				<div id="content02" class="content_p1" style="display: block;">
-				<!-- ad -->
-					<div class="ad_com" >
+					<!-- ad -->
+					<div class="ad_com">
 						<h2>歪评 ：到了年底游戏公司都开始捞起外快</h2>
 						<div class="out_im">
-						<div class="img_01">
-							<img alt="" src="../images/content_01.jpg">
-							<p>网易游戏热爱者年度盛典</p>
-						</div>
-						<div class="img_01">
-							<img alt="" src="../images/content_02.jpg">
-							<p>网易游戏热爱者年度盛典</p>
-						</div>
+							<div class="img_01">
+								<img alt="" src="../images/content_01.jpg">
+								<p>网易游戏热爱者年度盛典</p>
+							</div>
+							<div class="img_01">
+								<img alt="" src="../images/content_02.jpg">
+								<p>网易游戏热爱者年度盛典</p>
+							</div>
 						</div>
 					</div>
 					<!-- news -->
@@ -193,14 +190,57 @@
 					</div>
 				</div>
 			</div>
-			</div>
-			<div class="th_d">
-				<div>
-					
+		</div>
+		<div class="th_d">
+			<div class="al">
+				<div class="al_title">
+					<h2>多玩独家</h2>
+					<div class="new_title_r">
+						<a href="#" class="title_m">更多独家<i class="title_c"></i></a>
+					</div>
+				</div>
+				<!--  -->
+				<div class="game">
+					<ul>
+						<li><img alt="" src="../images/th_d_01.jpg" />
+							<ul class="inner_ul">
+								<li>请从绝处读侠气：论中国武侠游戏四种江湖</li>
+								<li>歪评：到了年底游戏公司都开始捞起外快</li>
+							</ul></li>
+						<li><img alt="" src="../images/th_d_02.jpg" />
+							<ul class="inner_ul">
+								<li>请从绝处读侠气：论中国武侠游戏四种江湖</li>
+								<li>歪评：到了年底游戏公司都开始捞起外快</li>
+							</ul></li>
+						<li><img alt="" src="../images/th_d_03.jpg" /></li>
+					</ul>
+				</div>
+				<!--  -->
+				<div class="al_title m_d">
+					<div class="al_title" style="border: none;">
+						<h2>游戏说</h2>
+						<p>一个视频聊游戏背后的文化</p>
+						<div class="under_bottom">
+							<ul>
+								<li class="nm is_active"></li>
+								<li class="nm"></li>
+								<li class="nm"></li>
+							</ul>
+						</div>
+					</div>
+
+					<div style="overflow: hidden; float: left;">
+						<div class="turn">
+							<img class="m_i" alt="" src="../images/th_d_04.jpg" /> 
+							<img class="m_i" alt="" src="../images/th_d_05.jpg" /> 
+							<img class="m_i" alt="" src="../images/th_d_06.jpg" />
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
 
-		
+
 	</div>
 </body>
 </html>

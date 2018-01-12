@@ -19,7 +19,7 @@ a {
 	width: 1200px;
 	overflow: hidden;
 	margin: 0 auto;
-	border: 1px solid red;
+	padding-bottom: 30px;
 }
 
 .sc_d {
@@ -30,10 +30,9 @@ a {
 }
 
 .th_d {
-	width: 304px;
+	width: 306px;
 	height: 550px;
 	float: left;
-	border: 1px solid blue;
 }
 
 .sc_d_f {
@@ -55,8 +54,8 @@ a {
 .sc_d_s {
 	width: 430px;
 	height: 550px;
-	margin-right:20px;
-	float:left;
+	margin-right: 20px;
+	float: left;
 	overflow: hidden;
 }
 
@@ -64,7 +63,6 @@ a {
 	width: 3000px;
 	background-color: red;
 	padding-left: 0px;
-	border: 1px solid yellow;
 	overflow: hidden;
 }
 
@@ -129,7 +127,6 @@ a {
 
 .sc_d_t {
 	height: 132px;
-	border: 1px solid red;
 }
 
 .new {
@@ -201,8 +198,8 @@ a {
 	background-image: url("../images/alllittle_coin.png");
 	background-repeat: no-repeat;
 	background-position: -1715px -1370px;
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 }
 
 .new_m_ul .new_ul_li .li_p {
@@ -220,8 +217,7 @@ a {
 
 .sc_d_fo {
 	height: 96px;
-	position:relative;
-	border: 1px solid blue;
+	position: relative;
 }
 
 .sc_d_fo .ad_new {
@@ -241,114 +237,234 @@ a {
 	padding: 12px 0;
 	font-weight: 400;
 }
-.ad_ul{
+
+.ad_ul {
 	margin-left: 34px;
 }
-.ad_title{
+
+.ad_title {
 	width: 70px;
-    float: left;
-    position: relative;
+	float: left;
+	position: relative;
 }
-.ad_title h3{
+
+.ad_title h3 {
 	font-size: 12px;
-    color: #888;
-    font-weight: 400;
+	color: #888;
+	font-weight: 400;
 }
-.ad_p{
+
+.ad_p {
 	margin-left: 73px;
 }
-.f_bold{
-	    font-weight: 700;
+
+.f_bold {
+	font-weight: 700;
 }
-.ad_p p{
+
+.ad_p p {
 	height: 16px;
 	font-size: 14px;
-    line-height: 16px;
-    overflow: hidden;
-    margin-bottom: 11px;
+	line-height: 16px;
+	overflow: hidden;
+	margin-bottom: 11px;
 }
-.sc_d_fi{
-	width:430px;
-	float:left;
-	
+
+.sc_d_fi {
+	width: 430px;
+	float: left;
 }
-.content_head{
+
+.content_head {
 	width: 100%;
-	
-	overflow:hidden;
-	
+	overflow: hidden;
 }
-.content_head ul{
-	height:32px;
+
+.content_head ul {
+	height: 32px;
 	border-bottom: 1px solid #E3E3E3;
 }
-.content_head ul li{
-	width:140px;
-	line-height:30px;
-	text-align:center;
+
+.content_head ul li {
+	width: 140px;
+	line-height: 30px;
+	text-align: center;
 	float: left;
-	
 }
+
 .content_p1 {
 	
 }
-.content_p1 .ad_com{
+
+.content_p1 .ad_com {
 	padding-top: 20px;
 }
-.content_p1 .ad_com h2{
-	 font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-	font-size:18px;
-	font-weight:800;
+
+.content_p1 .ad_com h2 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
 	color: #DE1B1B;
 	text-align: center;
 }
-.content_p1 .ad_com p{
-	
+
+.content_p1 .ad_com p {
 	text-align: center;
-	margin:4px 0 18px 0;
+	margin: 4px 0 18px 0;
 	font-size: 12px;
 	color: #666666;
 }
-.content_p1 .news_p{
+
+.content_p1 .news_p {
 	border-top: 1px dashed #666666;
 }
 
-.content_p1 .news_p ul li{
-	
+.content_p1 .news_p ul li {
 	font-size: 14px;
-	color:#666666;
+	color: #666666;
 	list-style: disc inside;
 }
 
-.extra{
+.extra {
 	margin-top: 18px;
 }
-.content_p1 .news_p ul li p{
-	color:#333333;
+
+.content_p1 .news_p ul li p {
+	color: #333333;
 	margin-left: 4px;
 	line-height: 30px;
 }
-.content_p1 .news_p .ex{
+
+.content_p1 .news_p .ex {
 	margin-top: 14px;
 }
-.content_p1 .news_p .ex li p{
+
+.content_p1 .news_p .ex li p {
 	line-height: 24px;
 }
-.content_p1 .ad_com .out_im{
+
+.content_p1 .ad_com .out_im {
 	width: 430px;
-	margin:12px 0 20px 0;
+	margin: 12px 0 20px 0;
 	overflow: hidden;
 }
-.content_p1 .ad_com .out_im .img_01{
+
+.content_p1 .ad_com .out_im .img_01 {
 	width: 168px;
 	height: 133px;
-	margin: 4px 15px 0 15px;	
+	margin: 4px 15px 0 15px;
 	float: left;
 }
-.content_p1 .ad_com .out_im .img_01 p{
+
+.content_p1 .ad_com .out_im .img_01 p {
 	margin-top: 8px;
 	text-align: left;
+}
+
+.th_d .al {
+	width: 290px;
+	float: right;
+	
+}
+
+.th_d .al .al_title {
+	height: 31px;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+.th_d .al .al_title h2 {
+	font-size: 22px;
+	font-weight: 400;
+	font-family: 'Microsoft YaHei';
+	padding-left: 5px;
+	float: left;
+	color: #333333;
+	line-height: 24px;
+	border-left: 4px solid #E94646;
+}
+
+.th_d .al .al_title p {
+	float: left; font-size : 12px;
+	color: #C8C8C8;
+	line-height: 34px;
+	margin-left: 8px;
+	font-size: 12px;
+}
+.th_d .al .game ul {
+	margin-top: 20px;
+	border-left: 1px solid #C8C8C8;
+}
+
+.th_d .al .game ul li {
+	margin-top: 8px;
+	
+}
+
+.th_d .al .game .inner_ul {
+	margin-top: 9px;
+	padding-left:8px;
+	border-left: none !important;
+}
+
+.th_d .al .game .inner_ul li {
+	font-size: 12px;
+}
+
+.th_d .al .game .inner_ul li {
+	background-image: url("../images/alllittle_coin.png");
+	background-repeat: no-repeat;
+	background-position: -1909px -1649px;
+	width: 100%;
+	height: 12px;
+	margin: 4px 0 4px 0; padding : 2px 0 2px 20px;
+	line-height: 18px;
+	padding: 2px 0 2px 20px;
+}
+
+.under_bottom {
+	float: right;
+	margin-top: 15px;
+}
+
+.under_bottom ul {
+	float: left;
+}
+
+.under_bottom .nm{
+	width: 4px;
+	height: 4px;
+	background-color: #E9EAEC;
+	border: 1px solid #999999;
+	border-radius: 2px;
+	float: left;
+	margin: 1px 4px;
+	transition: width 300ms;
+}
+
+.m_d {
+	margin-top: 30px;
+}
+
+.is_active{
+	width: 17px !important;
+	height: 4px !important;
+	border-left-radius: 2 !important;
+	border-right-radius: 2 !important;
+	border-color: #E94646 !important;
+	background-color: #E94646 !important;
+}
+
+.m_i {
+	margin-top: 7px;
+	display:block;
+	float: left;
+}
+.turn{
+	position:relative;
+	width: 870px;
+	height:96px;
+	left:0px;
+	overflow: hidden;
 }
