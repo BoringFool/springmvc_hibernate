@@ -290,10 +290,18 @@ a {
 	line-height: 30px;
 	text-align: center;
 	float: left;
+	font-size: 16px;
+	color: #4C4C4C;
 }
 
-.content_p1 {
-	
+.content_head ul li:hover {
+	color: #E94646;
+}
+
+.li_change {
+	color: #000000; font-weight : 700;
+	border-bottom: 4px solid #B81616;
+	font-weight: 700;
 }
 
 .content_p1 .ad_com {
@@ -342,7 +350,7 @@ a {
 }
 
 .content_p1 .news_p .ex li p {
-	line-height: 24px;
+	line-height: 27px;
 }
 
 .content_p1 .ad_com .out_im {
@@ -366,7 +374,6 @@ a {
 .th_d .al {
 	width: 290px;
 	float: right;
-	
 }
 
 .th_d .al .al_title {
@@ -386,12 +393,14 @@ a {
 }
 
 .th_d .al .al_title p {
-	float: left; font-size : 12px;
+	float: left;
+	font-size: 12px;
 	color: #C8C8C8;
 	line-height: 34px;
 	margin-left: 8px;
 	font-size: 12px;
 }
+
 .th_d .al .game ul {
 	margin-top: 20px;
 	border-left: 1px solid #C8C8C8;
@@ -399,12 +408,11 @@ a {
 
 .th_d .al .game ul li {
 	margin-top: 8px;
-	
 }
 
 .th_d .al .game .inner_ul {
 	margin-top: 9px;
-	padding-left:8px;
+	padding-left: 8px;
 	border-left: none !important;
 }
 
@@ -418,7 +426,8 @@ a {
 	background-position: -1909px -1649px;
 	width: 100%;
 	height: 12px;
-	margin: 4px 0 4px 0; padding : 2px 0 2px 20px;
+	margin: 4px 0 4px 0;
+	padding: 2px 0 2px 20px;
 	line-height: 18px;
 	padding: 2px 0 2px 20px;
 }
@@ -432,7 +441,7 @@ a {
 	float: left;
 }
 
-.under_bottom .nm{
+.under_bottom .nm {
 	width: 4px;
 	height: 4px;
 	background-color: #E9EAEC;
@@ -447,7 +456,7 @@ a {
 	margin-top: 30px;
 }
 
-.is_active{
+.is_active {
 	width: 17px !important;
 	height: 4px !important;
 	border-left-radius: 2 !important;
@@ -458,13 +467,59 @@ a {
 
 .m_i {
 	margin-top: 7px;
-	display:block;
+	display: block;
 	float: left;
 }
-.turn{
-	position:relative;
+
+.turn {
+	position: relative;
 	width: 870px;
-	height:96px;
-	left:0px;
+	height: 96px;
+	 /* 290 */
 	overflow: hidden;
+}
+
+.navigation {
+	width: 60px;
+	height: 480px;
+	position: fixed;
+	top: 22%;
+	left: 82%;
+}
+
+.navigation ul li {
+	width: 58px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	font-size: 12px;
+	color: #8B8D90;
+	border: 1px solid #9EA0A3;
+	margin-top: -1px;
+}
+
+.navigation ul li:hover,.navigation ul .chan {
+	color: #FFFFFF;
+	background-color: #E94646;
+	border-color: #E94646 !important;
+}
+
+.navigation ul .ext {
+	border-bottom: 1px solid !important;
+}
+
+.navigation .nav_bottom {
+	background-image: url("../images/alllittle_coin.png");
+	background-repeat: no-repeat;
+	background-position: -1860px -1190px;
+	width: 60px;
+	height: 40px;
+	display: none;
+}
+
+.out_turn {
+	width:290px;
+	overflow: hidden;
+	float: left;
 }

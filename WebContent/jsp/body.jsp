@@ -17,7 +17,7 @@
 </script>
 </head>
 <body>
-	<div class="main">
+	<div id="top" class="main">
 		<div class="sc_d_f">
 			<img alt="" src="../images/ad01.png" class="img_f"> <img alt=""
 				src="../images/near_ad.jpg" class="img_s">
@@ -119,13 +119,13 @@
 				<!-- title -->
 				<div class="content_head">
 					<ul>
-						<li><h4>今日头条</h4></li>
-						<li><h4>要闻回顾</h4></li>
-						<li><h4>新闻中心</h4></li>
+						<li value="1" class="li_change">今日头条</li>
+						<li value="2">要闻回顾</li>
+						<li value="3">新闻中心</li>
 					</ul>
 				</div>
 				<!-- content -->
-				<div id="content01" class="content_p1" style="display: none;">
+				<div id="content01" class="content_p1" style="display: block;">
 					<!-- ad -->
 					<div class="ad_com">
 						<h2>你能像他们这样 爱游戏到百年归老？</h2>
@@ -155,7 +155,7 @@
 
 
 				<!-- content 2-->
-				<div id="content02" class="content_p1" style="display: block;">
+				<div id="content02" class="content_p1" style="display: none;">
 					<!-- ad -->
 					<div class="ad_com">
 						<h2>歪评 ：到了年底游戏公司都开始捞起外快</h2>
@@ -183,15 +183,12 @@
 							<li><p>绝地求生国服专属服饰曝光：中国龙和脸谱等元素格外惹眼</p></li>
 							<li><p>《怪物猎人：世界》将于下周迎来第三次测试 灭尽龙狩猎演示</p></li>
 							<li><p>迷宫探索RPG游戏《命运之手2》 PS4平台简体中文版已经上市</p></li>
-							<li><p>开放世界RPG《在远方：追云者编年史》曝PS4简中版发售日期</p></li>
-							<li><p>EA Sports格斗大作《UFC 3》全新预告片 生涯模式首次曝光</p></li>
-							<li><p>刘亦菲发布“天使密语”《天使纪元》明日燃情公测</p></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="th_d">
+		<div id="down" class="th_d">
 			<div class="al">
 				<div class="al_title">
 					<h2>多玩独家</h2>
@@ -216,21 +213,21 @@
 					</ul>
 				</div>
 				<!--  -->
-				<div class="al_title m_d">
+				<div class="m_d">
 					<div class="al_title" style="border: none;">
 						<h2>游戏说</h2>
 						<p>一个视频聊游戏背后的文化</p>
 						<div class="under_bottom">
 							<ul>
-								<li class="nm is_active"></li>
-								<li class="nm"></li>
-								<li class="nm"></li>
+								<li value="1" class="nm is_active"></li>
+								<li value="2" class="nm"></li>
+								<li value="3" class="nm"></li>
 							</ul>
 						</div>
 					</div>
 
-					<div style="overflow: hidden; float: left;">
-						<div class="turn">
+					<div class="out_turn">
+						<div class="turn" style="left: -0px;">
 							<img class="m_i" alt="" src="../images/th_d_04.jpg" /> 
 							<img class="m_i" alt="" src="../images/th_d_05.jpg" /> 
 							<img class="m_i" alt="" src="../images/th_d_06.jpg" />
@@ -240,7 +237,26 @@
 			</div>
 		</div>
 
-
+	<div style="width: 20px ;height: 5000px;background-color: red;"></div>
+	</div>
+	
+	<!-- 右侧固定导航条 -->
+	<div class="navigation">
+		<ul>
+			<li class="chan" value="1">要闻</li>
+			<li value="2">泛游戏</li>
+			<li>礼包</li>
+			<li>游戏</li>
+			<li>娱乐</li>
+			<li>舞蹈</li>
+			<li>鬼畜</li>
+			<li>军事</li>
+			<li>影评</li>
+			<li>囧图</li>
+			<li>游戏榜</li>
+		</ul>
+		<div class="nav_bottom">	
+		</div>
 	</div>
 </body>
 </html>
