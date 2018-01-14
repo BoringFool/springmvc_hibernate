@@ -13,21 +13,23 @@ $().ready(function() {
 
 	/*hover触发时调用函数*/
 	function hov(arg) {
+		var a,c,target;
 		$(".cir_d").removeClass("add_class");
-		var a = arg.attr("value");
+		a = arg.attr("value");
 		arg.addClass("add_class");
 		distance(a);
-		var c = a - 1;
-		var target = -(c * 364);
+		c = a - 1;
+		target = -(c * 364);
 		times(c, target);
 	};
 
 	/* 计算需要切换几张图,D_value相当于执行次数 */
 	function times(arg, arg_1) {
-		var p = $(".sc_ul").css("left");
-		var current = parseInt(p.substring(0, p.length - 2));
-		var current_value = parseInt(-current / 364);
-		var D_value = arg - current_value;
+		var p,current,current_value,D_value;
+		p = $(".sc_ul").css("left");
+		current = parseInt(p.substring(0, p.length - 2));
+		current_value = parseInt(-current / 364);
+		D_value = arg - current_value;
 		/* 判断差值的正负 */
 		if (D_value > 0) {
 			// 执行的函数
@@ -39,26 +41,27 @@ $().ready(function() {
 
 	/* 渐换，执行一次等于切换一张图 */
 	function cc(arg_1, arg_2) {
-		var t = 0;
+		var t,timer;
+		t = 0;
 		/* 画面切换速度 */
-		var timer = setInterval(function() {
+		timer = setInterval(function() {
 			cir(arg_1, arg_2);
 		}, 40);
 
 		/* 需要被执行4次 */
 		function cir(arg_1, arg_2) {
-			var itl = -91*arg_2;/* 每次增减距离 */
+			var itl,p,current,act;
+			itl = -91*arg_2;/* 每次增减距离 */
 			/* 大减，小加？ */
-			var p = $(".sc_ul").css("left");
-			var current = parseInt(p.substring(0, p.length - 2));
+			p = $(".sc_ul").css("left");
+			current = parseInt(p.substring(0, p.length - 2));
 			if (arg_1 > current) {
-				var act = current - itl;
+				act = current - itl;
 				$(".sc_ul").css("left", act);
 			} else if (arg_1 < current) {
-				var act = current + itl;
+				act = current + itl;
 				$(".sc_ul").css("left", act);
 			}
-
 			t++;
 			/* 判断是否停止 */
 			if (t >= 4) {
@@ -81,98 +84,53 @@ $().ready(function() {
 	});
 	
 	function hov_2(arg){
+		var target,fin_target;
 		$(".is_active").removeClass("is_active");
 		arg.addClass("is_active");
 		/*鼠标悬浮li的value*/
-		var target=arg.attr("value");
-		var fin_target=(parseInt(target)-1)*290;
-		cishu(fin_target);
-		/*one();*/
+		target=arg.attr("value");
+		fin_target=(parseInt(target)-1)*290;
+		 one_10(fin_target);
 	}
+	
 	
 	/**/
-	/*function one(){
-		var length=-29;
-		var a=$(".turn").css("left");
-		var b=parseInt(a);
-		
-		$(".turn").css("left",b+length);
-	}*/
-	
-/*判断切图函数需要被调用几次*/
-	function cishu(arg){
-		var a,c;
+	function one_10(fin_target){
+		var d_b,D_value,ttt,c;
+		d_b=parseInt($(".turn").css("left"));
+		D_value=(fin_target/290)+(d_b/290);
+		ttt=Math.abs(D_value);
 		c=0;
+		t=setInterval(function(){
+			one();
+		},10);
 		
-		var p = $(".turn").css("left");
-		
-		var current = parseInt(p.substring(0, p.length - 2));
-		
-		/*需要切几张图*/
-		a=(arg-current)/290;
-		ac(arg,current,a);
-		/*if(a>=0){
-			
-			 var b=setInterval(function(){
-				 ac(arg,current,a);
-			 },100);
-		}else{
-			var b=setInterval(function(){
-				 ac(arg,current,-a);
-			 },100);
-		}*/
-		
-		/*一张图切换*/
-		function ac(arg_1,arg_2,arg_3){
-			var t=0;
-			
-			/*c++;
-			if (c >= 1) {
-				clearInterval(b);
-			};*/
-			 
-			
-			 /*画面切换速度*/ 
-			var timer = setInterval(function() {
-				tn(arg_1,arg_2);
-			}, 10);
-			
-			/*切换一张图，每次增加、减少的距离，以及需要被执行的次数，一次100ms*/
-			function tn(arg,arg_2){
-				var length=29;
-				
-				/*判断是加还是减*/
-				if (arg >arg_2) {
-					var act = arg_2 - length;
-					$(".turn").css("left", act);
-				} else if (arg < arg_2) {
-					var act = arg_2 + length;
-					$(".turn").css("left", act);
-				}else{
-					
-				}
-				
-				t++;
-				 /*判断是否停止 */
-				if (t >= 10) {
-					clearInterval(timer);
-				};
+		/**/
+		function one(){
+			var a,b,length;
+			length=-29*ttt;
+			a=$(".turn").css("left");
+			b=parseInt(a);
+			if(-fin_target>b){
+				$(".turn").css("left",b-length);
+			}else if(-fin_target<b){
+				$(".turn").css("left",b+length);
+			}
+			c++;
+			if(c>=10){
+				clearInterval(t);	
 			}
 		}
-	
 	}
-	
 	
 	/*导航条底部div是否显示判断*/
 	function show_none(){
-		
 		if($(document).scrollTop()>=1400){
 			$(".nav_bottom").css({"display":"block"});
 		}else{
 			$(".nav_bottom").css("display","none");
 		}
 	}
-	
 	$(window).scroll(function(){
 		show_none();
 	});
@@ -217,12 +175,7 @@ $().ready(function() {
 	},function(){
 		
 	});
-	/**/	
-	
-	
-	
-	
-	
+
 	/* 小三角切换 */
 	function distance(arg) {
 		var a = (arg - 1) * 43;
