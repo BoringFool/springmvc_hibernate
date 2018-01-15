@@ -15,8 +15,28 @@
 </script>
 </head>
 <body>
-	<div class="a" >
-		
+	<div class="main" >
+		<div class="sec">
+			<div class="common_title_l">
+				
+			</div>
+			<div class="content_l">
+				<div class="cl_t">
+					
+				</div>
+				<div class="cl_b">
+					
+				</div>
+			</div>
+			<div class="content_r">
+				
+			</div>
+		</div>
+		<div class="thd">
+			<div class="common_title_r">
+				
+			</div>
+		</div>
 	</div>
 </body>
 </html>

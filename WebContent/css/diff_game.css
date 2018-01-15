@@ -1,8 +1,23 @@
-body{
-
+* {
+	margin: 0;
+	padding: 0;
 }
-.a{
-	width: 100px;
-	height: 100px;
-	background-color: red;
+
+body {
+	height: 670px;
+	background-image: url("../images/alllittle_coin.png");
+	background-repeat: no-repeat;
+	background-position: 0px -1685px;
+}
+
+.main {
+	width: 1200px;
+	margin: 0 auto;}
+
+.sec {
+	width: 875px;
+}
+
+.thd {
+	width: 290px;
 }
