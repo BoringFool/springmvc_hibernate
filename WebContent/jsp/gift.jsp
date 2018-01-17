@@ -9,7 +9,56 @@
 <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../js/gift.js"></script>
 </head>
+<script>
+	if (typeof jQuery == 'undefined') {
+		window.alert("没有jquery");
+	}
+</script>
 <body>
-
+	<div class="main">
+		<div class="sec">
+			<div class="title_l">
+				
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<div>
+							<img alt="" src="">
+							<div >
+								
+							</div>
+							<div>
+								
+							</div>
+							<h3 style="text-overflow:ellipsis;">用text——overflow ：</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="thd">
+			<div class="title_r">
+				
+			</div>
+			<div class="content_t">
+				
+			</div>
+			<div class="content_m">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="content_b">
+				
+			</div>
+		</div>
+	</div>
 </body>
 </html>
