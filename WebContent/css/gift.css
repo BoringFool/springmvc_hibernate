@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.sec .content ul li .whole {
+	width: 160px;
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	position: relative;
+}
+
+.sec .content ul li .whole img {
+	margin-bottom: 2px;
+	position: relative;
+	z-index: -2;
+}
+
+.sec .content ul li .whole .img_t {
+	width: 39px;
+	height: 24px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 24px;
+	background-color: #545454;
+	color: #FFFFFF;
+	position: absolute;
+	top: -24px;
+	transition: top 500ms;
+	left: 120px;
+}
+
+
+.sec .content ul li .whole .img_b {
+	background-image: url("../images/alllittle_coin.png");
+	background-repeat: no-repeat;
+	background-position: -1760px -796px;
+	width: 160px;
+	height: 40px;
+	top: 90px;
+	transition: top 500ms;
+	z-index: -1; 
+	overflow: hidden;
+	padding-top: 12px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.sec .content ul li .whole h3 {
+	font-size: 12px;
+	color: #333333;
+	line-height: 23px;
+	overflow: hidden;
+	font-weight: 400;
+	width: auto;
+	white-space: nowrap; /* 去除此属性，h3会显示全部，否则超出部分用点代替 */
+	word-wrap: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+
+.sec .content ul li .whole .img_b .l {
+	background-image: url("../images/alllittle_coin.png");
+	background-repeat: no-repeat;
+	background-position: -1896px -857px;
+	width: 24px;
+	height: 24px;
+	float: left;
+}
+
+.sec .content ul li .whole .img_b .r {
+	width: 30px;
+	height: 27px;
+	font-size: 12px;
+	margin-right: 4px;
+	color: #FFFFFF;
+	float: right;
+	text-align: center;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.sec .content ul li .whole .view_data {
+	width: 160px;
+	height: 18px;
+	background-color: #FFFFFF;
+	padding-top: 3px;
+	overflow: hidden;
+}
+
+.sec .content ul li .whole .view_data .data_a,.data_p {
+	color: #C0C8CD;
+}
+
+.sec .content ul li .whole .view_data .data_a {
+	font-size: 12px;
+	line-height: 18px;
+	float: left;
+}
+
+.sec .content ul li .whole .view_data .data_p {
+	background-image: url("../images/alllittle_coin.png");
+	background-repeat: no-repeat;
+	background-position: -1906px -897px;
+	padding-left: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	float: right;
+}
