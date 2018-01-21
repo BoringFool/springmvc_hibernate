@@ -15,7 +15,7 @@ $().ready(function (){
 		$(this).find(".view_data").css("display","block");
 	});
 	
-	$(".sec .title_l").hover(function(){
+	$(".sec .title_l .r_fl_fr").hover(function(){
 			ratate_i();
 	},function(){
 			ratate_i_b();		
@@ -26,31 +26,25 @@ $().ready(function (){
 	
 	function ratate_i(){
 		var a=5;
-		var b=1;
-		timer=setInterval(function(){
+		 var timer=setInterval(function(){
 			a=a+5;
 			$(".sec .title_l .r_fl_fr i").css("transform","rotate("+a+"deg)");
-			b++;
-			if(b>35){
-				a=0;
+		},8);
+		 if(a>=180){
+				console.log(a);
 				clearInterval(timer);
 			}
-		},8);
-		
 	}
 	
 	function ratate_i_b(){
 		var a=175;
-		var t=1;
-		timer=setInterval(function(){
+		 var timer=setInterval(function(){
 			a=a-5;
 			$(".sec .title_l .r_fl_fr i").css("transform","rotate("+a+"deg)");
-			t++;
-			if(t>35){
+		},8);
+		 if(a<=0){
 				clearInterval(timer);
 			}
-		},8);
-		
 	}
 	
 
