@@ -10,6 +10,28 @@
 <script src="../js/war.js"></script>
 </head>
 <body>
-
+	<ul style="list-style: none;float: left;border-bottom: 1px solid red">
+		<li style="float: left;height:30px;margin-left: 1px;width: 101px">
+			<div class="a" style="width: 100px;height:30px;overflow: hidden;">
+				 <a style="line-height: 30px">h</a>
+				 <ul style="list-style: none;">
+				 	<li>1</li>
+				 	<li>2</li>
+				 	<li>3</li>
+				 </ul>
+			</div>
+		</li>
+		<li style="float: left;">
+			<div style="width: 100px;height: 30px;">
+				 <a style="line-height: 30px">h</a>
+				 <ul style="list-style: none;">
+				 	<li>1</li>
+				 	<li>2</li>
+				 	<li>3</li>
+				 </ul>
+			</div>
+		</li>
+		<li style="float: left;"></li>
+	</ul>
 </body>
 </html>
