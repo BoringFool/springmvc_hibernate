@@ -29,11 +29,12 @@ $().ready(function (){
 		 var timer=setInterval(function(){
 			a=a+5;
 			$(".sec .title_l .r_fl_fr i").css("transform","rotate("+a+"deg)");
-		},8);
-		 if(a>=180){
+			if(a>=180){
 				console.log(a);
 				clearInterval(timer);
 			}
+		},8);
+		 
 	}
 	
 	function ratate_i_b(){
@@ -41,10 +42,11 @@ $().ready(function (){
 		 var timer=setInterval(function(){
 			a=a-5;
 			$(".sec .title_l .r_fl_fr i").css("transform","rotate("+a+"deg)");
-		},8);
-		 if(a<=0){
+			if(a<=0){
 				clearInterval(timer);
 			}
+		 },8);
+		 
 	}
 	
 
