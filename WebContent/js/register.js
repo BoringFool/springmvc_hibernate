@@ -1,7 +1,7 @@
 $().ready(function() {
 
 	/*
-	 * 注册提交
+	 * 娉ㄥ唽鎻愪氦
 	 */
 	$("#submit").click(function() {
 		register();
@@ -9,7 +9,7 @@ $().ready(function() {
 	});
 	
 	/*
-	 * 退出当前页面
+	 * 閫�鍑哄綋鍓嶉〉闈�
 	 * */
 	$("#quit").click(function() {
 		close();
@@ -17,7 +17,7 @@ $().ready(function() {
 	});
 
 	/*
-	 * 注册成功后，改变页面
+	 * 娉ㄥ唽鎴愬姛鍚庯紝鏀瑰彉椤甸潰
 	 * */
 	function change() {
 		$(".f_s_s1").css({
@@ -40,7 +40,7 @@ $().ready(function() {
 	}
 
 	/*
-	 * 退出当前页面
+	 * 閫�鍑哄綋鍓嶉〉闈�
 	 * */
 	function close() {
 		window.opener = null;
@@ -48,7 +48,7 @@ $().ready(function() {
 	}
 
 	/*
-	 * ajax注册
+	 * ajax娉ㄥ唽
 	 */
 	function register() {
 		var Jdata = {
@@ -56,27 +56,27 @@ $().ready(function() {
 			"password" : $("#password").val(),
 			"email" : $("#email").val()
 
-		}
+		};
 		$.ajax({
 			type : "post",
 			url : "/springmvc_hibernate/user/register",
 			contentType : "application/json;charset=utf-8",
 			data : JSON.stringify(Jdata),
-			dataTape : "json",
+			dataType : "json",
 			success : function(data) {
 				if (data == 1) {
-					alert("注册成功,5秒后跳转");
+					alert("娉ㄥ唽鎴愬姛,5绉掑悗璺宠浆");
 					change();
 					setTimeout(function (){
 						$(location).attr("href","http://localhost:8080/springmvc_hibernate/jsp/logo.jsp");
 					}, 5000);
 
 				} else {
-					alert("用户已经存在");
+					alert("鐢ㄦ埛宸茬粡瀛樺湪");
 				}
 			},
 			error : function() {
-				alert("提交失败");
+				alert("鎻愪氦澶辫触");
 			}
 		});
 
